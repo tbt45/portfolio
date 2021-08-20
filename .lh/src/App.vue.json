@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/App.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1629466595026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1629466595026,
+            "name": "Commit-0",
+            "content": "<template>\n  <p>いいね{{ number }}</p>\n</template>\n\n<script>S\nimport HelloWorld from './components/HelloWorld.vue'\n\nexport default {\n  date(){\n    return{\n      number: 5\n    };\n  }\n};\n</script>\n\n<style>\n</style>\n"
+        }
+    ]
+}

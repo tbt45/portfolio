@@ -1,0 +1,94 @@
+{
+    "sourceFile": "src/main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1629466875544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629466881991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-い\n+import \n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466887819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import \n+import test\n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466893014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import test\n+import test from \n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466900736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import test from \n+import test from '.'\n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466906562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import test from '.'\n+import test from './te'\n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466912004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import test from './te'\n+import test from './t'\n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466919667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import test from './t'\n+import test from './'\n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466924823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import Vue from 'vue'\n import App from './App.vue'\n-import test from './'\n+import test from './test.vue'\n \n Vue.config.productionTip = false\n \n new Vue({\n"
+                },
+                {
+                    "date": 1629466934756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import Vue from 'vue'\n-import App from './App.vue'\n+import App from './App.vue'ue\n import test from './test.vue'\n \n Vue.config.productionTip = false\n+V\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466940034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import Vue from 'vue'\n-import App from './App.vue'ue\n+import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-V\n+Vue\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466945699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-Vue\n+const Feature = Vue.component('FeatureComponent');\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466952940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-const Feature = Vue.component('FeatureComponent');\n+const Feature = Vue.component');\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466958728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-const Feature = Vue.component');\n \n+\n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466965009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n+Vue\n \n-\n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466971689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-Vue\n+Vue.component\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466978635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-Vue.component\n+Vue.component()\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466984941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-Vue.component()\n+Vue.component(\"test\")\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466991461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-Vue.component(\"test\")\n+Vue.component(\"test,\")\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                },
+                {
+                    "date": 1629466997890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import App from './App.vue'\n import test from './test.vue'\n \n Vue.config.productionTip = false\n-Vue.component(\"test\",tes)\n+Vue.component(\"test\",test)\n \n new Vue({\n   render: h => h(App),\n }).$mount('#app')\n"
+                }
+            ],
+            "date": 1629466875544,
+            "name": "Commit-0",
+            "content": "import Vue from 'vue'\nimport App from './App.vue'\nい\n\nVue.config.productionTip = false\n\nnew Vue({\n  render: h => h(App),\n}).$mount('#app')\n"
+        }
+    ]
+}
