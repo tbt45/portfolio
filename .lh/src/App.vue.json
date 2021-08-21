@@ -3,11 +3,923 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 228,
             "patches": [
                 {
                     "date": 1629466595026,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629548887485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n-  <p>いいね{{ number }}</p>\n+  <p>いいねい{{ number }}</p>\n </template>\n \n-<script>S\n+<script>\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629548899894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <p>いいねい{{ number }}</p>\n+  <p>いいね{{ number }}</p>\n </template>\n \n <script>\n import HelloWorld from './components/HelloWorld.vue'\n"
+                },
+                {
+                    "date": 1629548948871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n-import HelloWorld from './components/HelloWorld.vue'\n+import HelloWorld from './components/HelloWorld.vue'；\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549050555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n-import HelloWorld from './components/HelloWorld.vue'；\n+import HelloWorl from './components/HelloWorld.vue'\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549057172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n-import HelloWorl from './components/HelloWorld.vue'\n+import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549063503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n-import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549082247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n+// eslint-disable-next-line no-unused-vars\n+import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549095763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n-// eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629549109313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n+\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629549116193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   <p>いいね{{ number }}</p>\n </template>\n \n <script>\n-\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629549130057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n <template>\n-  <p>いいね{{ number }}</p>\n+  <p>いいねsss{{ number }}</p>\n </template>\n \n <script>\n+// eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629549149192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <p>いいねsss{{ number }}</p>\n+  <p>いいね{{ number }}</p>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n@@ -10,9 +10,9 @@\n   date(){\n     return{\n       number: 5\n     };\n-  }\n+  };\n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629549154254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   date(){\n     return{\n       number: 5\n     };\n-  };\n+  }\n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629549167838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n export default {\n   date(){\n     return{\n-      number: 5\n+      number: 5;\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629549173851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n export default {\n   date(){\n     return{\n-      number: 5;\n+      number: 5\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629549179864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n export default {\n   date(){\n     return{\n-      number: 5\n+      number: 5++\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629549295650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n   <p>いいね{{ number }}</p>\n+  i\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n@@ -8,9 +9,9 @@\n \n export default {\n   date(){\n     return{\n-      number: 5++\n+      number: 5\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629549300864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <p>いいね{{ number }}</p>\n-  i\n+  <input type=\"text\">\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549315370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <p>いいね{{ number }}</p>\n-  <input type=\"text\">\n+  <input>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549348077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <p>いいね{{ number }}</p>\n-  <input>\n+  <inpu>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549354251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n <template>\n-  <p>いいね{{ number }}</p>\n-  <inpu>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549362654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <template>\n+ in\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549371793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- in\n+ <input >\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549424779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <input >\n+ <input v-on=\"\">\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549429858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <input v-on=\"\">\n+ <input v-on=\"clic\">\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549443157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <input v-on=\"clic\">\n+ <input >\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549453463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n- <input >\n+ \n+ <input>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549460186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- \n+ <div></div>\n  <input>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629549467123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <div></div>\n+ <di></di>\n  <input>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629549479131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <di></di>\n+ butt\n  <input>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629549484810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- butt\n+ <button v></button>\n  <input>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629549494572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v></button>\n+ <button v-on=\"click\"><b></b></button>\n  <input>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629549504151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v-on=\"click\"><b></b></button>\n+ <button v-on=\"click\">ボタn</button>\n  <input>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629549510457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n- <button v-on=\"click\">ボタn</button>\n- <input>\n+ <button v-on=\"click\">ボタン</button>\n </template>\n \n+\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n"
+                },
+                {
+                    "date": 1629549517322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n+tem\n \n-\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n"
+                },
+                {
+                    "date": 1629549523694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n-tem\n+<template>\n+  i\n+</template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n"
+                },
+                {
+                    "date": 1629549533898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n <template>\n-  i\n+  <input>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549562398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n <template>\n-  <input>\n+  \n </template>\n \n+\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n"
+                },
+                {
+                    "date": 1629549571029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n <template>\n-  \n+  <a href=\"\"></a>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549577605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n <template>\n-  <a href=\"\"></a>\n+  \n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549584567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n <template>\n-  \n+  <div class=\"class\"></div>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549600149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n-<template>\n-  <div class=\"class\"></div>\n-</template>\n \n \n+\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n"
+                },
+                {
+                    "date": 1629549607147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n+div\n \n \n-\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n"
+                },
+                {
+                    "date": 1629549613741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n-div\n+<input\n \n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549624231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n <template>\n  <button v-on=\"click\">ボタン</button>\n </template>\n-<input\n \n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549654572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v-on=\"click\">ボタン</button>\n+ <button v-on:=\"click\">ボタン</button>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549659894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v-on:=\"click\">ボタン</button>\n+ <button v-on:click=\"click\">ボタン</button>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549666926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v-on:click=\"click\">ボタン</button>\n+ <button v-on:click=\"\">ボタン</button>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549672090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v-on:click=\"\">ボタン</button>\n+ <button v-on:click=\"namber\">ボタン</button>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549680043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n- <button v-on:click=\"namber\">ボタン</button>\n+ <button v-on:click=\"namber+\">ボタン</button>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549705150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n- <button v-on:click=\"namber+\">ボタン</button>\n+ <button v-on:click=\"namber+=1\">ボタン</button>\n+ \n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549714691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n  <button v-on:click=\"namber+=1\">ボタン</button>\n- \n+ <p>{{</p>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549720776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n  <button v-on:click=\"namber+=1\">ボタン</button>\n- <p>{{</p>\n+ <p>{{namber}}</p>\n </template>\n \n \n <script>\n"
+                },
+                {
+                    "date": 1629549729000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n <template>\n  <button v-on:click=\"namber+=1\">ボタン</button>\n  <p>{{namber}}</p>\n </template>\n+<template>\n+  \n+</template>\n \n-\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n"
+                },
+                {
+                    "date": 1629549734750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n  <button v-on:click=\"namber+=1\">ボタン</button>\n- <p>{{namber}}</p>\n+ \n </template>\n <template>\n   \n </template>\n"
+                },
+                {
+                    "date": 1629549741271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n- <button v-on:click=\"namber+=1\">ボタン</button>\n+  <button v-on:click=\"namber+=1\">ボタン</button>\n  \n </template>\n <template>\n-  \n+  <p>{{namber}}</p>\n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549773390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <template>\n-  <button v-on:click=\"namber+=1\">ボタン</button>\n- \n+  <button click=\"namber+=1\">ボタン</button>\n </template>\n <template>\n   <p>{{namber}}</p>\n </template>\n"
+                },
+                {
+                    "date": 1629549816759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n-  <button click=\"namber+=1\">ボタン</button>\n+\n+  <button @click=\"namber+=1\">ボタン</button>\n </template>\n <template>\n   <p>{{namber}}</p>\n </template>\n"
+                },
+                {
+                    "date": 1629549826240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-\n+  <div>\n   <button @click=\"namber+=1\">ボタン</button>\n </template>\n <template>\n   <p>{{namber}}</p>\n"
+                },
+                {
+                    "date": 1629549833307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n <template>\n   <div>\n   <button @click=\"namber+=1\">ボタン</button>\n+  </div>\n+\n </template>\n <template>\n   <p>{{namber}}</p>\n </template>\n"
+                },
+                {
+                    "date": 1629549844719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n <template>\n   <div>\n-  <button @click=\"namber+=1\">ボタン</button>\n+    <button @click=\"namber+=1\">ボタン</button>\n   </div>\n-\n </template>\n <template>\n-  <p>{{namber}}</p>\n+  \n </template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n"
+                },
+                {
+                    "date": 1629549853401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n <template>\n   <div>\n     <button @click=\"namber+=1\">ボタン</button>\n+    <p>{{namber}}</p>\n   </div>\n </template>\n-<template>\n-  \n-</template>\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n"
+                },
+                {
+                    "date": 1629549895574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n export default {\n   date(){\n     return{\n       number: 5\n-    };\n+    }\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629549913159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n+  \n   date(){\n     return{\n       number: 5\n     }\n"
+                },
+                {
+                    "date": 1629549918227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,15 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n+  import Vue from 'vue';\n+  import App from './App.vue';\n   \n+  const app = new Vue({\n+    el: '#root',\n+    render: (h) => h(App),\n+  });\n   date(){\n     return{\n       number: 5\n     }\n"
+                },
+                {
+                    "date": 1629549925706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n-  import Vue from 'vue';\n-  import App from './App.vue';\n-  \n-  const app = new Vue({\n-    el: '#root',\n-    render: (h) => h(App),\n-  });\n+  n\n   date(){\n     return{\n       number: 5\n     }\n"
+                },
+                {
+                    "date": 1629549953838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n+\n export default {\n-  n\n   date(){\n     return{\n       number: 5\n     }\n"
+                },
+                {
+                    "date": 1629549960832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n+n\n \n-\n export default {\n   date(){\n     return{\n       number: 5\n"
+                },
+                {
+                    "date": 1629549966914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n-n\n+new.\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549973180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n-new.\n+new.Vue\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549981660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n-new.Vue\n+new.Vue()\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629549990603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n-new.Vue()\n+new.Vue({\n+  el\n+})\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629550003797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n new.Vue({\n-  el\n+  el:#\n })\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629550014669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div>\n+  <div >\n     <button @click=\"namber+=1\">ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n new.Vue({\n-  el:#\n+  el:#app\n })\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629550020404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div >\n+  <div id=\"a\">\n     <button @click=\"namber+=1\">ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629550025459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div id=\"a\">\n+  <div id=\"app\">\n     <button @click=\"namber+=1\">ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n@@ -9,8 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n new.Vue({\n   el:#app\n+  \n })\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629550031228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n new.Vue({\n   el:#app\n-  \n+  date:\n })\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629550037003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n new.Vue({\n   el:#app\n-  date:\n+  date:{\n+    \n+  }\n })\n \n export default {\n   date(){\n"
+                },
+                {
+                    "date": 1629550042348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n import HelloWorld from './components/HelloWorld.vue'\n new.Vue({\n   el:#app\n   date:{\n-    \n+    number\n   }\n })\n \n export default {\n"
+                },
+                {
+                    "date": 1629550056580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,13 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n+\n new.Vue({\n   el:#app\n   date:{\n-    number\n+    number:0\n   }\n })\n \n export default {\n"
+                },
+                {
+                    "date": 1629550085942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-new.Vue({\n+new Vue({\n   el:#app\n   date:{\n     number:0\n   }\n"
+                },
+                {
+                    "date": 1629550110869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n new Vue({\n-  el:#app\n+  el: #app\n   date:{\n     number:0\n   }\n })\n"
+                },
+                {
+                    "date": 1629550122178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n new Vue({\n-  el: #app\n+  el: '#app\n   date:{\n     number:0\n   }\n })\n"
+                },
+                {
+                    "date": 1629550130359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n new Vue({\n-  el: '#app\n+  el: '#app'\n   date:{\n     number:0\n   }\n })\n"
+                },
+                {
+                    "date": 1629550146627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n new Vue({\n-  el: '#app'\n+  el: '#app',\n   date:{\n-    number:0\n+    number:0,\n   }\n })\n \n export default {\n"
+                },
+                {
+                    "date": 1629550156336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-new Vue({\n+newVue({\n   el: '#app',\n   date:{\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550186053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-newVue({\n+new Vue({\n   el: '#app',\n-  date:{\n+  date: {\n     number:0,\n   }\n })\n \n"
+                },
+                {
+                    "date": 1629550263434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-new Vue({\n+Vue({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550270550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-Vue({\n+ex({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550276645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-ex({\n+export de({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550289269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export de({\n+Export default({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550296451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-Export default({\n+Export Default({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550305387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-Export Default({\n+ExportDefault({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550315292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-ExportDefault({\n+({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550333123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-({\n+export default({\n   el: '#app',\n   date: {\n     number:0,\n   }\n"
+                },
+                {
+                    "date": 1629550348663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,15 +15,8 @@\n     number:0,\n   }\n })\n \n-export default {\n-  date(){\n-    return{\n-      number: 5\n-    }\n-  }\n-};\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629550470102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,6 @@\n \n </script>\n \n <style>\n+\n </style>\n"
+                },
+                {
+                    "date": 1629550476002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,6 +18,6 @@\n \n </script>\n \n <style>\n-\n+#a\n </style>\n"
+                },
+                {
+                    "date": 1629550481413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,6 +18,9 @@\n \n </script>\n \n <style>\n-#a\n+#app{\n+  \n+}\n+\n </style>\n"
+                },
+                {
+                    "date": 1629550487654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,8 @@\n </script>\n \n <style>\n #app{\n-  \n+  width: ;\n }\n \n </style>\n"
+                },
+                {
+                    "date": 1629550513120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"namber+=1\">ボタン</button>\n-    <p>{{namber}}</p>\n+    <p>1</p>\n   </div>\n </template>\n \n <script>\n@@ -19,8 +19,8 @@\n </script>\n \n <style>\n #app{\n-  width: ;\n+  width: 100px;\n }\n \n </style>\n"
+                },
+                {
+                    "date": 1629550530204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"namber+=1\">ボタン</button>\n-    <p>1</p>\n+    <p></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629550537018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"namber+=1\">ボタン</button>\n-    <p></p>\n+    <p>{{namber}}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629550570653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,8 @@\n   </div>\n </template>\n \n <script>\n-// eslint-disable-next-line no-unused-vars\n-import HelloWorld from './components/HelloWorld.vue'\n \n export default({\n   el: '#app',\n   date: {\n"
+                },
+                {
+                    "date": 1629550701559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,13 @@\n   </div>\n </template>\n \n <script>\n+// eslint-disable-next-line no-unused-vars\n+import HelloWorld from './components/HelloWorld.vue'\n \n+\n+\n export default({\n   el: '#app',\n   date: {\n     number:0,\n"
+                },
+                {
+                    "date": 1629550707434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n+cons\n \n-\n export default({\n   el: '#app',\n   date: {\n     number:0,\n"
+                },
+                {
+                    "date": 1629550721508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-cons\n+const vm\n \n export default({\n   el: '#app',\n   date: {\n"
+                },
+                {
+                    "date": 1629550729362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-const vm\n+const vm = new\n \n export default({\n   el: '#app',\n   date: {\n"
+                },
+                {
+                    "date": 1629550739939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-const vm = new\n+const vm = new Vue\n \n export default({\n   el: '#app',\n   date: {\n"
+                },
+                {
+                    "date": 1629550751218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,14 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-const vm = new Vue\n+const vm = new Vue({\n+  el: '#app',\n+  date: {\n+    number:0,\n+  }\n+})\n \n export default({\n   el: '#app',\n   date: {\n"
+                },
+                {
+                    "date": 1629550869610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,10 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-const vm = new Vue({\n+var app = new Vue({\n   el: '#app',\n-  date: {\n-    number:0,\n-  }\n })\n \n export default({\n   el: '#app',\n"
+                },
+                {
+                    "date": 1629550918060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,8 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-var app = new Vue({\n-  el: '#app',\n-})\n-\n export default({\n   el: '#app',\n   date: {\n     number:0,\n"
+                },
+                {
+                    "date": 1629550981258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,9 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default({\n-  el: '#app',\n-  date: {\n-    number:0,\n+\n   }\n })\n \n </script>\n"
+                },
+                {
+                    "date": 1629550987222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export default({\n-\n-  }\n+export default({}\n })\n \n </script>\n \n"
+                },
+                {
+                    "date": 1629551000445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export default({}\n-})\n+export default()\n \n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629551005949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export default()\n+export default(){\n+  date\n+}\n \n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629551014342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n export default(){\n-  date\n }\n \n </script>\n \n"
+                },
+                {
+                    "date": 1629551022112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,8 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n-\n-export default(){\n-}\n-\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551120378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n+\n </script>\n \n <style>\n #app{\n   width: 100px;\n }\n-\n </style>\n"
+                },
+                {
+                    "date": 1629551130721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,14 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n+new Vue({\n+  el: '#app',\n+  date: {\n+    number:0,\n+  }\n+})\n \n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629551135775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,15 +7,8 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n-new Vue({\n-  el: '#app',\n-  date: {\n-    number:0,\n-  }\n-})\n-\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551189620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,13 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n+export default {\n+  name: 'app',\n+  components: {\n+    HelloWorld\n+  }\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551198521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n+\n export default {\n   name: 'app',\n   components: {\n     HelloWorld\n"
+                },
+                {
+                    "date": 1629551237524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n   name: 'app',\n   components: {\n     HelloWorld\n   }\n+  \n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551249944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,14 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export default {\n+export default (){\n   name: 'app',\n   components: {\n     HelloWorld\n   }\n-  \n+}\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551256884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export default (){\n+export default {\n   name: 'app',\n   components: {\n-    HelloWorld\n+    HelloWorld,\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551292177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,8 @@\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   name: 'app',\n-  components: {\n-    HelloWorld,\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551352411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"namber+=1\">ボタン</button>\n+    <button click=\"namber+=1\">ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n \n@@ -10,9 +10,8 @@\n import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   name: 'app',\n-  }\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629551358954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button click=\"namber+=1\">ボタン</button>\n+    <button v-on:click=\"namber+=1\">ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629551528103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-export default {\n+ltexport defau {\n   name: 'app',\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551705421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,15 @@\n <script>\n // eslint-disable-next-line no-unused-vars\n import HelloWorld from './components/HelloWorld.vue'\n \n-ltexport defau {\n-  name: 'app',\n-}\n+export default {\n+  date(){\n+    return{\n+      number: 5\n+    };\n+  }\n+};\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551718439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     return{\n       number: 5\n     };\n   }\n-};\n+}\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629551739904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button v-on:click=\"namber+=1\">ボタン</button>\n+    <button \">ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629551790671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button \">ボタン</button>\n+    <button>ボタン</button>\n     <p>{{namber}}</p>\n   </div>\n </template>\n \n@@ -18,8 +18,5 @@\n }\n </script>\n \n <style>\n-#app{\n-  width: 100px;\n-}\n </style>\n"
+                },
+                {
+                    "date": 1629551798175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,8 @@\n \n export default {\n   date(){\n     return{\n-      number: 5\n-    };\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551814220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n \n export default {\n   date(){\n     return{\n+      \n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551820625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n export default {\n   date(){\n     return{\n-      \n+      Number:\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551825944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n export default {\n   date(){\n     return{\n-      Number:\n+      Number:0,\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551833094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n export default {\n   date(){\n     return{\n-      Number:0,\n+      number:0,\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629551841061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n \n export default {\n   date(){\n     return{\n-      number:0,\n+      number: 5\n+    };\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629552561194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,8 @@\n   </div>\n </template>\n \n <script>\n-// eslint-disable-next-line no-unused-vars\n-import HelloWorld from './components/HelloWorld.vue'\n \n export default {\n   date(){\n     return{\n"
+                },
+                {
+                    "date": 1629552567844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,8 @@\n </template>\n \n <script>\n \n-export default {\n-  date(){\n-    return{\n-      number: 5\n-    };\n-  }\n-}\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629552579239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>{{namber}}</p>\n   </div>\n </template>\n \n <script>\n-\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629552624096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   </div>\n </template>\n \n <script>\n+\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629552630335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   </div>\n </template>\n \n <script>\n-\n+export de\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629552636705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n   </div>\n </template>\n \n <script>\n-export de\n+export default{\n+  date\n+}\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629552642270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n </template>\n \n <script>\n export default{\n-  date\n+  date: f\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629552649664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n </template>\n \n <script>\n export default{\n-  date: f\n+  date: function(){\n+    \n+  }\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629552659408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n \n <script>\n export default{\n   date: function(){\n-    \n+    return{\n+\n+    }\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629552665575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n <script>\n export default{\n   date: function(){\n     return{\n+      Number\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1629552679110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n <script>\n export default{\n   date: function(){\n     return{\n-      Number\n+      number\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1629552684677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n <script>\n export default{\n   date: function(){\n     return{\n-      number\n+      number: 5\n \n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1629552689790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n export default{\n   date: function(){\n     return{\n       number: 5\n-\n-    }\n+    };\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629552697866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n+    \n   </div>\n </template>\n \n <script>\n@@ -10,9 +11,9 @@\n     return{\n       number: 5\n     };\n   }\n-}\n+};\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629552705619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    \n+    <p></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552711736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p></p>\n+    <p>{{</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552719046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>{{</p>\n+    <p>{{number}}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552729725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>{{number}}</p>\n+    <p>{{number }}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552740384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>{{number }}</p>\n+    <p>iine{{ number }}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552764085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>iine{{ number }}</p>\n+    <p>{{ number }}</p>\n   </div>\n </template>\n \n <script>\n export default{\n-  date: function(){\n+  date (){\n     return{\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629552775476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <template>\n   <div id=\"app\">\n-    <button>ボタン</button>\n     <p>{{ number }}</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629552781393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n   <div id=\"app\">\n+    <bu>ボタン</bu\n     <p>{{ number }}</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629552799132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n-    <bu>ボタン</bu\n-    <p>{{ number }}</p>\n+    <button>ボタン</button>\n+    <p>({{ number }}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552840617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>({{ number }}</p>\n+    <p>({{ number }})</p>\n   </div>\n </template>\n \n <script>\n export default{\n   date (){\n-    return{\n+    return {\n       number: 5\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629552977117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button>ボタン</button>\n-    <p>({{ number }})</p>\n+    <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629552987755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default{\n-  date (){\n+  date f(){\n     return {\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629552993866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default{\n-  date f(){\n+  date： function(){\n     return {\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629553000192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default{\n-  date： function(){\n+  date: function(){\n     return {\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629553020847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button>ボタン</button>\n+    <button >ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629553027142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button >ボタン</button>\n+    <button @c>ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629553033169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @c>ボタン</button>\n+    <button @click=\"n\">ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629553040058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"n\">ボタン</button>\n+    <button @click=\"number=\">ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629553048207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"number=\">ボタン</button>\n+    <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629553166998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default{\n-  date: function(){\n+  date: function(nu){\n     return {\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629553177878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default{\n-  date: function(nu){\n+  date: function(){\n     return {\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629553184196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default{\n-  date: function(){\n+  date: function(m){\n     return {\n       number: 5\n     };\n   }\n"
+                },
+                {
+                    "date": 1629553197485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,17 @@\n <template>\n   <div id=\"app\">\n+    \n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n \n <script>\n export default{\n-  date: function(m){\n+  date: function(){\n     return {\n-      number: 5\n+      number: 0\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553204019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    \n+\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n@@ -9,8 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n+      va\n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553209536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      va\n+      value\n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553215490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      value\n+      value: \n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553221960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      value: \n+      \n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553228543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      \n+      name:\n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553237750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      name:\n+      name: tom\n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553243805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      name: tom\n+      \n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553267625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <template>\n   <div id=\"app\">\n-\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629553272865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n+    in\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553305709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,16 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    in\n+    <input type=\"text\">\n   </div>\n </template>\n \n <script>\n export default{\n   date: function(){\n     return {\n-      \n       number: 0\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553359222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      number: 0\n+      number : 0\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553569776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      number : 0\n+      number: 0\n+      \n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553580788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n export default{\n   date: function(){\n     return {\n       number: 0\n-      \n+      ok: t\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553586300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      number: 0\n-      ok: t\n+      : 0\n+      ok: true\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553592963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default{\n   date: function(){\n     return {\n-      : 0\n+      number: 0\n       ok: true\n     };\n   }\n };\n"
+                },
+                {
+                    "date": 1629553613122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n export default{\n   date: function(){\n     return {\n       number: 0\n-      ok: true\n+    : true\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553646007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,17 +2,17 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n+    \n   </div>\n </template>\n \n <script>\n export default{\n   date: function(){\n     return {\n       number: 0\n-    : true\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553652060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    \n+    p \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553658400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    p \n+    p <v-els></v-els>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553664880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    p <v-els></v-els>\n+    p\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553670989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    p\n+    <p></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553678688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p></p>\n+    <p ></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553686309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p ></p>\n+    <p v-></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553699985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p v-></p>\n+    <p v-if></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553705307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p v-if></p>\n+    <p v-if=\"ok\"></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553712053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p v-if=\"ok\"></p>\n+    <p v-if=\"ok\">ok!</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553717542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n export default{\n   date: function(){\n     return {\n       number: 0\n+      ok:\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553725798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n export default{\n   date: function(){\n     return {\n       number: 0\n-      ok:\n+      ok: tlue\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553734217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n export default{\n   date: function(){\n     return {\n       number: 0\n-      ok: tlue\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629553748193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n     <p v-if=\"ok\">ok!</p>\n+    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553754771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n     <p v-if=\"ok\">ok!</p>\n-    \n+    <p v></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553760105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n     <p v-if=\"ok\">ok!</p>\n-    <p v></p>\n+    <p v-else></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553765360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n     <p v-if=\"ok\">ok!</p>\n-    <p v-else></p>\n+    < v-else><\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553771257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n     <p v-if=\"ok\">ok!</p>\n-    < v-else><\n+    <p v-else></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553783173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n       number: 0\n     };\n   }\n };\n+\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629553790718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n       number: 0\n     };\n   }\n };\n-\n+date{\n+  ok\n+}\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629553796970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   }\n };\n date{\n-  ok\n+  ok:t\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629553802667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n     };\n   }\n };\n date{\n-  ok:t\n-}\n+  ok:true\n+};\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629553811514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       number: 0\n     };\n   }\n };\n-date{\n+date(){\n   ok:true\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629553825911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,8 @@\n       number: 0\n     };\n   }\n };\n-date(){\n-  ok:true\n-};\n </script>\n \n <style>\n </style>\n"
+                },
+                {
+                    "date": 1629553832823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p v-if=\"ok\">ok!</p>\n-    <p v-else></p>\n+    <p >ok!</p>\n+    <p></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553841704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,8 @@\n   <div id=\"app\">\n     <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n-    <p >ok!</p>\n-    <p></p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629553849551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,6 @@\n };\n </script>\n \n <style>\n+\n </style>\n"
+                },
+                {
+                    "date": 1629553857897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,6 @@\n };\n </script>\n \n <style>\n-\n+#app\n </style>\n"
+                },
+                {
+                    "date": 1629553863369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,8 @@\n };\n </script>\n \n <style>\n-#app\n+#app{\n+  color: ;\n+}\n </style>\n"
+                },
+                {
+                    "date": 1629553870332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,7 @@\n </script>\n \n <style>\n #app{\n-  color: ;\n+  color:;\n }\n </style>\n"
+                },
+                {
+                    "date": 1629553875737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,7 @@\n </script>\n \n <style>\n #app{\n-  color:;\n+  color: red;\n }\n </style>\n"
+                },
+                {
+                    "date": 1629554224066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,1 @@\n-<template>\n-  <div id=\"app\">\n-    <button @click=\"number = +1\">ボタン</button>\n-    <p>いいね({{ number }})</p>\n-    <input type=\"text\">\n-  </div>\n-</template>\n \n-<script>\n-export default{\n-  date: function(){\n-    return {\n-      number: 0\n-    };\n-  }\n-};\n-</script>\n-\n-<style>\n-#app{\n-  color: red;\n-}\n-</style>\n"
+                },
+                {
+                    "date": 1629554386807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-\n+te\n"
+                },
+                {
+                    "date": 1629554392074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-te\n+<template>\n+  te\n+</template>\n"
+                },
+                {
+                    "date": 1629554399355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <template>\n-  te\n+  <test\n </template>\n"
                 }
             ],
             "date": 1629466595026,

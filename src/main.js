@@ -7,5 +7,5 @@ Vue.component("test",test);
 // testをグローバル登録
 
 new Vue({
-  render: h => h(App),
+    render: h => h(App),
 }).$mount('#app')

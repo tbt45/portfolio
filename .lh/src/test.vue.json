@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 63,
             "patches": [
                 {
                     "date": 1629467305510,
@@ -16,6 +16,250 @@
                 {
                     "date": 1629467323919,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-te\n\\ No newline at end of file\n+<template>\n+    di\n+</template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629554053389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n <template>\n-    di\n-</template>\n\\ No newline at end of file\n+    <div></div>\n+</template>\n+\n"
+                },
+                {
+                    "date": 1629554060223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n <template>\n     <div></div>\n </template>\n \n+sc\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629554087167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <template>\n     <div></div>\n </template>\n \n-sc\n\\ No newline at end of file\n+scri\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629554125760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <template>\n     <div></div>\n </template>\n \n-scri\n\\ No newline at end of file\n+script\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629554133415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n <template>\n     <div></div>\n </template>\n \n-script\n\\ No newline at end of file\n+<script>\n+export default {\n+    \n+}\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629554227616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,23 @@\n <template>\n-    <div></div>\n+  <div id=\"app\">\n+    <button @click=\"number = +1\">ボタン</button>\n+    <p>いいね({{ number }})</p>\n+    <input type=\"text\">\n+  </div>\n </template>\n \n\\ No newline at end of file\n <script>\n-export default {\n-    \n+export default{\n+  date: function(){\n+    return {\n+      number: 0\n+    };\n+  }\n+};\n+</script>\n+\n+<style>\n+#app{\n+  color: red;\n }\n-</script>\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629554236463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,10 @@\n     <input type=\"text\">\n   </div>\n </template>\n \n+\n+\n <script>\n export default{\n   date: function(){\n     return {\n"
+                },
+                {
+                    "date": 1629554250372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,17 @@\n     <input type=\"text\">\n   </div>\n </template>\n \n+<script>\n+export default {\n+    \n+}\n+</script>\n \n-\n <script>\n export default{\n-  date: function(){\n-    return {\n-      number: 0\n-    };\n-  }\n+  \n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629554258297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,16 +7,16 @@\n </template>\n \n <script>\n export default {\n-    \n+    date: function(){\n+    return {\n+      number: 0\n+    };\n+  }\n }\n </script>\n \n-<script>\n-export default{\n-  \n-};\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629554267854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,8 @@\n   }\n }\n </script>\n \n-</script>\n-\n <style>\n #app{\n   color: red;\n }\n"
+                },
+                {
+                    "date": 1629554274470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     return {\n       number: 0\n     };\n   }\n-}\n+};\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629554292595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-    date: function(){\n+    date:(){\n     return {\n       number: 0\n     };\n   }\n"
+                },
+                {
+                    "date": 1629554298529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-    date:(){\n+    date:() {\n     return {\n       number: 0\n     };\n   }\n"
+                },
+                {
+                    "date": 1629554341982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default {\n     date:() {\n     return {\n-      number: 0\n+       number: 0\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629554349416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default {\n     date:() {\n     return {\n-       number: 0\n+    number: 0\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629554373691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n </template>\n \n <script>\n export default {\n-    date:() {\n+    date: function(){\n     return {\n-    number: 0\n+      number: 0\n     };\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629554458078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-    date: function(){\n+    data: function(){\n     return {\n       number: 0\n     };\n   }\n"
+                },
+                {
+                    "date": 1629554550727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"number = +1\">ボタン</button>\n+    <button @click=\"number = ++1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554556577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"number = ++1\">ボタン</button>\n+    <button @click=\"number = +1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554587117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"number = +1\">ボタン</button>\n+    <button @click=\"+1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554599234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"+1\">ボタン</button>\n+    <button @click=\"increment\"+1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554607176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\"+1\">ボタン</button>\n+    <button @click=\"increment\"></button>+1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554613114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\"></button>+1\">ボタン</button>\n+    <but+1 @click=\"increment\"></but+1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554619089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <but+1 @click=\"increment\"></but+1\">ボタン</button>\n+    <button @click=\"increment\">+1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554626976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\">+1\">ボタン</button>\n+    <button @click=\"increment\"+1\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554655585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\"+1\">ボタン</button>\n+    <button @click=\"increment\"+1>ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554664168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\"+1>ボタン</button>\n+    <button @click=\"increment\"></button>+1>ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554779731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\"></button>+1>ボタン</button>\n+    <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\">\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629554799794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     data: function(){\n     return {\n       number: 0\n     };\n-  }\n+  }、\n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629554805201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     data: function(){\n     return {\n       number: 0\n     };\n-  }、\n+  }\n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629554813538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n     data: function(){\n     return {\n       number: 0\n     };\n-  }\n+  },\n+  methods:\n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629554820777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,11 @@\n     return {\n       number: 0\n     };\n   },\n-  methods:\n+  methods: {\n+      in\n+  }\n };\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629554829511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n <script>\n export default {\n     data: function(){\n     return {\n-      number: 0\n+    number: 0\n     };\n   },\n   methods: {\n-      in\n+    \n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629554836329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     number: 0\n     };\n   },\n   methods: {\n-    \n+    increment\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629554850231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     number: 0\n     };\n   },\n   methods: {\n-    increment\n+    increment()\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629554856960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,11 @@\n     number: 0\n     };\n   },\n   methods: {\n-    increment()\n+    increment(){\n+        thi\n+    }\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629554864464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     };\n   },\n   methods: {\n     increment(){\n-        thi\n+        this.num\n     }\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629554870893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     };\n   },\n   methods: {\n     increment(){\n-        this.num\n+        this.number +=\n     }\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629555536438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n+    \n     <input type=\"text\">\n   </div>\n </template>\n \n@@ -14,9 +15,9 @@\n     };\n   },\n   methods: {\n     increment(){\n-        this.number +=\n+        this.number += 1;\n     }\n   }\n };\n </script>\n"
+                },
+                {
+                    "date": 1629555543196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    \n+    <p v></p>\n     <input type=\"text\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629555550086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <p v></p>\n+    <p v-if=\"ok\"></p>\n     <input type=\"text\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629555556565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <p v-if=\"ok\"></p>\n+    <p v-if=\"ok\">ok</p>\n+    \n     <input type=\"text\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629555562734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <p v-if=\"ok\">ok</p>\n-    \n+    <p v-></p>\n     <input type=\"text\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629555574436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <p v-if=\"ok\">ok</p>\n-    <p v-></p>\n+    <p v-else></p>\n     <input type=\"text\">\n   </div>\n </template>\n \n@@ -12,8 +12,9 @@\n export default {\n     data: function(){\n     return {\n     number: 0\n+    ok\n     };\n   },\n   methods: {\n     increment(){\n"
+                },
+                {
+                    "date": 1629555589047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n export default {\n     data: function(){\n     return {\n     number: 0\n-    ok\n+    \n     };\n   },\n   methods: {\n     increment(){\n"
+                },
+                {
+                    "date": 1629555595648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,17 +12,17 @@\n export default {\n     data: function(){\n     return {\n     number: 0\n-    \n     };\n   },\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n   }\n };\n+\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555602436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.number += 1;\n     }\n   }\n };\n-\n+data{}\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555607772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.number += 1;\n     }\n   }\n };\n-data{}\n+data{ok:t}\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555613540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n         this.number += 1;\n     }\n   }\n };\n-data{ok:t}\n+data{\n+    ok:tlue}\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555621100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,11 @@\n         this.number += 1;\n     }\n   }\n };\n-data{\n-    ok:tlue}\n+data(){\n+    ok:tlue\n+    }\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555627564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   }\n };\n data(){\n     ok:tlue\n-    }\n+    };\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555639281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         this.number += 1;\n     }\n   }\n };\n-data(){\n+data:{\n     ok:tlue\n     };\n </script>\n \n"
+                },
+                {
+                    "date": 1629555646610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,11 @@\n         this.number += 1;\n     }\n   }\n };\n-data:{\n+data:(){\n     ok:tlue\n-    };\n+    }\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629555652505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,8 @@\n         this.number += 1;\n     }\n   }\n };\n-data:(){\n-    ok:tlue\n-    }\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629556073461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <p v-if=\"ok\">ok</p>\n-    <p v-else></p>\n     <input type=\"text\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629556079404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <input type=\"text\">\n+    <input type=\"text\" >\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629556088659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <input type=\"text\" >\n+    <input type=\"text\" v-model=\"msg\">\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629556232032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n+    Text\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629556237731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n-    Text\n+    text\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629556254555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n-    text\n+    msg(){\n+\n+    }\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629556262695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,8 @@\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n-    msg(){\n-\n-    }\n   }\n };\n </script>\n \n"
                 }
             ],
             "date": 1629467305510,
