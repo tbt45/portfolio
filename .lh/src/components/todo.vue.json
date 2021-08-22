@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/components/todo.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1629628731915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629628755922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n     newItem:\"\"\n     };\n     },\n     methods:{\n-    addItem:function){\n+    addItem:function()){\n     alert();\n     }\n-    },\n+    };\n } \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628784045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n     newItem:\"\"\n     };\n     },\n     methods:{\n-    addItem:function()){\n+        addItem:function()){\n     alert();\n     }\n-    };\n+    }\n } \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628795419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n     };\n     },\n     methods:{\n         addItem:function()){\n-    alert();\n+        alert();\n+        },\n     }\n-    }\n } \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628802124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n     </div>\n </template>\n \n <script>\n-export default {\n-    el:'#app',\n+export default {el:'#app',\n     data:function() {\n     return {\n     newItem:\"\"\n     };\n"
+                },
+                {
+                    "date": 1629628807729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,12 @@\n     </div>\n </template>\n \n <script>\n-export default {el:'#app',\n-    data:function() {\n-    return {\n+export default {\n+    el:'#app',\n+        data:function() {\n+        return {\n     newItem:\"\"\n     };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629628814862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-    newItem:\"\"\n-    };\n+        newItem:\"\"\n+        };\n     },\n     methods:{\n         addItem:function()){\n         alert();\n"
+                },
+                {
+                    "date": 1629629032053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n         addItem:function()){\n         alert();\n         },\n     }\n-} \n+} )\n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629629244621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,8 @@\n         addItem:function()){\n         alert();\n         },\n     }\n-} )\n+} \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629629263624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n         newItem:\"\"\n         };\n     },\n     methods:{\n-        addItem:function()){\n+        addItem:function(){\n         alert();\n         },\n     }\n-} \n+} )\n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629630501701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n     </div>\n </template>\n \n <script>\n+\n+\n export default {\n     el:'#app',\n         data:function() {\n         return {\n@@ -18,8 +20,8 @@\n         addItem:function(){\n         alert();\n         },\n     }\n-} )\n+} \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629630514606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     </div>\n </template>\n \n <script>\n+import EventTitle from \"./components/EventTitle.vue\";\n \n-\n export default {\n     el:'#app',\n         data:function() {\n         return {\n"
+                },
+                {
+                    "date": 1629630523504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     </div>\n </template>\n \n <script>\n-import EventTitle from \"./components/EventTitle.vue\";\n+import todo from \"./components/EventTitle.vue\";\n \n export default {\n     el:'#app',\n         data:function() {\n"
+                },
+                {
+                    "date": 1629630529227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     </div>\n </template>\n \n <script>\n-import todo from \"./components/EventTitle.vue\";\n+import todo from \"./components/to.vue\";\n \n export default {\n     el:'#app',\n         data:function() {\n"
+                },
+                {
+                    "date": 1629630541784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     </div>\n </template>\n \n <script>\n-import todo from \"./components/to.vue\";\n+import Todo from \"./components/todo.vue\";\n \n export default {\n     el:'#app',\n         data:function() {\n"
+                },
+                {
+                    "date": 1629630594627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     </div>\n </template>\n \n <script>\n-import Todo from \"./components/todo.vue\";\n \n+\n export default {\n     el:'#app',\n         data:function() {\n         return {\n"
+                }
+            ],
+            "date": 1629628731915,
+            "name": "Commit-0",
+            "content": "<template>\n    <div>\n        <input type=\"text\" v-model=\"newItem\">\n        <button @click=\"addItem\">表示</button>\n        <pre>{{ $data }}</pre>\n    </div>\n</template>\n\n<script>\nexport default {\n    el:'#app',\n    data:function() {\n    return {\n    newItem:\"\"\n    };\n    },\n    methods:{\n    addItem:function){\n    alert();\n    }\n    },\n} \n\n\n</script>"
+        }
+    ]
+}

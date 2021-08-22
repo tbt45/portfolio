@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 228,
+            "activePatchIndex": 286,
             "patches": [
                 {
                     "date": 1629466595026,
@@ -920,6 +920,238 @@
                 {
                     "date": 1629554399355,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <template>\n-  te\n+  <test\n </template>\n"
+                },
+                {
+                    "date": 1629625244941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,14 @@\n <template>\n-  <test\n+  <test></test>\n </template>\n+const app = new Vue({\n+  el:'#app',\n+  data:{\n+    newItem:\"\"\n+  },\n+  methods:{\n+    addItem:function(event){\n+    alert();\n+    }\n+  }\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629625253578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,12 @@\n <template>\n   <test></test>\n </template>\n+<script>\n+export default {\n+  \n+}\n+ </script>\n const app = new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n"
+                },
+                {
+                    "date": 1629625260608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <script>\n export default {\n   \n }\n- </script>\n+ \n const app = new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n"
+                },
+                {
+                    "date": 1629625265733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,6 @@\n     addItem:function(event){\n     alert();\n     }\n   }\n-})\n\\ No newline at end of file\n+})\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629625284834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,17 +4,5 @@\n <script>\n export default {\n   \n }\n- \n-const app = new Vue({\n-  el:'#app',\n-  data:{\n-    newItem:\"\"\n-  },\n-  methods:{\n-    addItem:function(event){\n-    alert();\n-    }\n-  }\n-})\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629625291070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,17 @@\n   <test></test>\n </template>\n <script>\n export default {\n-  \n+ const app = new Vue({\n+  el:'#app',\n+  data:{\n+    newItem:\"\"\n+  },\n+  methods:{\n+    addItem:function(event){\n+    alert();\n+    }\n+  }\n+}) \n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629625297115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <test></test>\n </template>\n <script>\n export default {\n- const app = new Vue({\n+  const = new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n   },\n"
+                },
+                {
+                    "date": 1629625302344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <test></test>\n </template>\n <script>\n export default {\n-  const = new Vue({\n+  const app= new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n   },\n"
+                },
+                {
+                    "date": 1629625309276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   <test></test>\n </template>\n <script>\n export default {\n-  const app= new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n   },\n"
+                },
+                {
+                    "date": 1629625323542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,7 @@\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n-  }\n-}) \n-}\n+  }) \n+\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629625330581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n-  }) \n-\n+}) \n+}\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629627810103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n     addItem:function(event){\n     alert();\n     }\n }) \n-}\n+\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629627820165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,6 @@\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n-}) \n-\n+  }) \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629627827489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,7 @@\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n-  }) \n+  })\n+}; \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629627832908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n-  })\n-}; \n+  }\n+} \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629627839761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n-  }\n+  },\n } \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629627872286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,6 @@\n <template>\n   <test></test>\n </template>\n <script>\n-export default {\n-  el:'#app',\n-  data:{\n-    newItem:\"\"\n-  },\n-  methods:{\n-    addItem:function(event){\n-    alert();\n-    }\n-  },\n-} \n+\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628344212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <template>\n+\n   <test></test>\n </template>\n <script>\n \n"
+                },
+                {
+                    "date": 1629628352666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-\n+  <div>\n   <test></test>\n </template>\n <script>\n \n"
+                },
+                {
+                    "date": 1629628358685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n   <test></test>\n-</template>\n+  </div></template>\n <script>\n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628366383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n <template>\n   <div>\n   <test></test>\n-  </div></template>\n+  <input type=\"text\">\n+  </div>\n+  </template>\n <script>\n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628375437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n   <test></test>\n-  <input type=\"text\">\n+  <in\n   </div>\n   </template>\n <script>\n \n"
+                },
+                {
+                    "date": 1629628381672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n   <test></test>\n-  <in\n+\n   </div>\n   </template>\n <script>\n \n"
+                },
+                {
+                    "date": 1629628401526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n   <test></test>\n-\n+<b></b>\n   </div>\n   </template>\n <script>\n \n"
+                },
+                {
+                    "date": 1629628426696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div>\n+\n   <test></test>\n-<b></b>\n+  <b></b>\n   </div>\n   </template>\n <script>\n \n"
+                },
+                {
+                    "date": 1629628435036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-\n+  <p></p>\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n"
+                },
+                {
+                    "date": 1629628441881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-  <p></p>\n+  <p>vue.js</p>\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n"
+                },
+                {
+                    "date": 1629628457286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n <template>\n   <div>\n-  <p>vue.js</p>\n+  <p>vue.js試験運用</p>\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n <script>\n-\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628465234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n   <b></b>\n   </div>\n   </template>\n <script>\n-</script>\n\\ No newline at end of file\n+</script>\n+\n"
+                },
+                {
+                    "date": 1629628470815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,4 +7,7 @@\n   </template>\n <script>\n </script>\n \n+<style>\n+\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628476008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n <script>\n </script>\n \n <style>\n-\n+  \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628483035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n <script>\n </script>\n \n <style>\n-  \n+  div\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628489360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n <template>\n   <div>\n-  <p>vue.js試験運用</p>\n+  <p >vue.js試験運用</p>\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n <script>\n </script>\n \n <style>\n-  div\n+  \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628496634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-  <p >vue.js試験運用</p>\n+  <p class=\"\">vue.js試験運用</p>\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n"
+                },
+                {
+                    "date": 1629628501886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-  <p class=\"\">vue.js試験運用</p>\n+  <p class=\"title\">vue.js試験運用</p>\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n"
+                },
+                {
+                    "date": 1629628507692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n <script>\n </script>\n \n <style>\n+  title\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628513142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n <script>\n </script>\n \n <style>\n-  title\n+  .title\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628518477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,9 @@\n <script>\n </script>\n \n <style>\n-  .title\n+  .title{\n+    fon\n+  }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628527078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n </script>\n \n <style>\n   .title{\n-    fon\n+    font-size: 50px;\n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628534829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,8 @@\n \n <style>\n   .title{\n     font-size: 50px;\n+    \n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628540146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n \n <style>\n   .title{\n     font-size: 50px;\n-    \n+    background-color: ;\n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628547554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n \n <style>\n   .title{\n     font-size: 50px;\n-    background-color: ;\n+    background-color: aqua;\n+    \n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628556364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n <style>\n   .title{\n     font-size: 50px;\n     background-color: aqua;\n-    \n+    border: ;\n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628564059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n <style>\n   .title{\n     font-size: 50px;\n     background-color: aqua;\n-    border: ;\n+    border: sienna;\n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628576207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n <style>\n   .title{\n     font-size: 50px;\n     background-color: aqua;\n-    border: sienna;\n+    \n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628584105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,7 @@\n <style>\n   .title{\n     font-size: 50px;\n     background-color: aqua;\n-    \n   }\n   \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629630604004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   <b></b>\n   </div>\n   </template>\n <script>\n+  import Todo from \"./components/todo.vue\";\n </script>\n \n <style>\n   .title{\n"
+                },
+                {
+                    "date": 1629630633211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   <test></test>\n   <b></b>\n   </div>\n   </template>\n+  \n <script>\n   import Todo from \"./components/todo.vue\";\n </script>\n \n"
+                },
+                {
+                    "date": 1629630672985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n   <p class=\"title\">vue.js試験運用</p>\n   <test></test>\n   <b></b>\n   </div>\n-  </template>\n-  \n+</template>\n+\n <script>\n-  import Todo from \"./components/todo.vue\";\n+import Todo from \"./components/todo.vue\";\n </script>\n \n <style>\n   .title{\n"
+                },
+                {
+                    "date": 1629630721410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n </template>\n \n <script>\n import Todo from \"./components/todo.vue\";\n+  \n </script>\n \n <style>\n   .title{\n"
+                },
+                {
+                    "date": 1629630731763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n </template>\n \n <script>\n import Todo from \"./components/todo.vue\";\n-  \n+  components: {\n+    \n+  },\n </script>\n \n <style>\n   .title{\n"
+                },
+                {
+                    "date": 1629630740653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n \n <script>\n import Todo from \"./components/todo.vue\";\n   components: {\n-    \n+    Todo,\n+    Test\n   },\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629630764864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,12 @@\n </template>\n \n <script>\n import Todo from \"./components/todo.vue\";\n+\n   components: {\n     Todo,\n-    Test\n+    Test,\n   },\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629630770237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,14 @@\n \n <script>\n import Todo from \"./components/todo.vue\";\n \n+export default {\n   components: {\n     Todo,\n     Test,\n   },\n+\n </script>\n \n <style>\n   .title{\n"
+                },
+                {
+                    "date": 1629630783320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   components: {\n     Todo,\n     Test,\n   },\n-\n+}\n </script>\n \n <style>\n   .title{\n"
+                },
+                {
+                    "date": 1629630791011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n </template>\n \n <script>\n import Todo from \"./components/todo.vue\";\n+import Test from \"./components/todo.vue\";\n \n export default {\n   components: {\n     Todo,\n"
+                },
+                {
+                    "date": 1629630799964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n import Todo from \"./components/todo.vue\";\n-import Test from \"./components/todo.vue\";\n+import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n     Todo,\n"
+                },
+                {
+                    "date": 1629630842480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   </div>\n </template>\n \n <script>\n-import Todo from \"./components/todo.vue\";\n-import Test from \"./components/Test.vue\";\n+import Todo from \"./components/Todo.vue\";\n+import Test from \"./Test.vue\";\n \n export default {\n   components: {\n     Todo,\n"
                 }
             ],
             "date": 1629466595026,

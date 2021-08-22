@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 63,
+            "activePatchIndex": 110,
             "patches": [
                 {
                     "date": 1629467305510,
@@ -260,6 +260,194 @@
                 {
                     "date": 1629556262695,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,8 @@\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n-    msg(){\n-\n-    }\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629612699274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n+    \n     <input type=\"text\" v-model=\"msg\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629612704597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    \n+    butt\n     <input type=\"text\" v-model=\"msg\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629612711510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    butt\n+    <button @></button>\n     <input type=\"text\" v-model=\"msg\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629612730148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <button @></button>\n+    <button @click=\"add\"></button>\n     <input type=\"text\" v-model=\"msg\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629612735400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <button @click=\"add\"></button>\n+    <button @click=\"add\">表示</button>\n     <input type=\"text\" v-model=\"msg\">\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629613882871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n+  </div>\n+</template>\n     <p>いいね({{ number }})</p>\n+    <input type=\"text\" v-model=\"msg\">\n     <button @click=\"add\">表示</button>\n-    <input type=\"text\" v-model=\"msg\">\n-  </div>\n-</template>\n \n <script>\n export default {\n     data: function(){\n"
+                },
+                {
+                    "date": 1629613926416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,21 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n-  </div>\n-</template>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\" v-model=\"msg\">\n     <button @click=\"add\">表示</button>\n+  </div>\n+</template>\n \n <script>\n export default {\n     data: function(){\n     return {\n     number: 0\n     };\n   },\n+  \n   methods: {\n     increment(){\n         this.number += 1;\n     }\n"
+                },
+                {
+                    "date": 1629613935323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </template>\n \n <script>\n export default {\n-    data: function(){\n+  data: function(){\n     return {\n     number: 0\n     };\n   },\n"
+                },
+                {
+                    "date": 1629613941757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,11 @@\n     return {\n     number: 0\n     };\n   },\n-  \n+  add: {\n+    \n+  }\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n"
+                },
+                {
+                    "date": 1629613951851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n     return {\n     number: 0\n     };\n   },\n-  add: {\n-    \n+  add: func{\n+\n   }\n   methods: {\n     increment(){\n         this.number += 1;\n"
+                },
+                {
+                    "date": 1629613958616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n     return {\n     number: 0\n     };\n   },\n-  add: func{\n-\n+  add: function(){\n+    \n   }\n   methods: {\n     increment(){\n         this.number += 1;\n"
+                },
+                {
+                    "date": 1629613971038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     number: 0\n     };\n   },\n   add: function(){\n-    \n+    alert()\n   }\n   methods: {\n     increment(){\n         this.number += 1;\n"
+                },
+                {
+                    "date": 1629613981377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n     number: 0\n     };\n   },\n   add: function(){\n-    alert()\n+    alert(){\n+\n+    };\n   }\n   methods: {\n     increment(){\n         this.number += 1;\n"
+                },
+                {
+                    "date": 1629613995992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,10 @@\n     };\n   },\n   add: function(){\n     alert(){\n-\n     };\n-  }\n+  },\n   methods: {\n     increment(){\n         this.number += 1;\n     }\n"
+                },
+                {
+                    "date": 1629614004479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     number: 0\n     };\n   },\n   add: function(){\n-    alert(){\n+    alert() {\n     };\n   },\n   methods: {\n     increment(){\n"
+                },
+                {
+                    "date": 1629614009783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     number: 0\n     };\n   },\n   add: function(){\n-    alert() {\n+    alert {\n     };\n   },\n   methods: {\n     increment(){\n"
+                },
+                {
+                    "date": 1629614063269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,14 +13,14 @@\n     return {\n     number: 0\n     };\n   },\n-  add: function(){\n-    alert {\n-    };\n-  },\n   methods: {\n     increment(){\n+      add: function(){\n+        alert() {\n+        };\n+      },\n         this.number += 1;\n     }\n   }\n };\n"
+                },
+                {
+                    "date": 1629614074546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n     };\n   },\n   methods: {\n     increment(){\n-      add: function(){\n+      this.number += 1;\n+    }\n+    add: function(){\n         alert() {\n         };\n       },\n-        this.number += 1;\n-    }\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629614083261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   methods: {\n     increment(){\n       this.number += 1;\n     }\n-    add: function(){\n+    add(){\n         alert() {\n         };\n       },\n   }\n"
+                },
+                {
+                    "date": 1629614091915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,13 @@\n   },\n   methods: {\n     increment(){\n       this.number += 1;\n-    }\n+    },\n     add(){\n         alert() {\n         };\n-      },\n+    },\n   }\n };\n </script>\n \n"
+                },
+                {
+                    "date": 1629625056251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,13 +18,24 @@\n     increment(){\n       this.number += 1;\n     },\n     add(){\n-        alert() {\n-        };\n+      alert() {\n+      };\n     },\n   }\n };\n+var app = new Vue({\n+  el:'#app',\n+  data:{\n+    newItem:\"\"\n+  },\n+  methods:{\n+    addItem:function(event){\n+    alert();\n+    }\n+  }\n+})\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629625063425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       };\n     },\n   }\n };\n-var app = new Vue({\n+ app = new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n   },\n"
+                },
+                {
+                    "date": 1629625081628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,15 +17,11 @@\n   methods: {\n     increment(){\n       this.number += 1;\n     },\n-    add(){\n-      alert() {\n-      };\n-    },\n   }\n };\n- app = new Vue({\n+const app = new Vue({\n   el:'#app',\n   data:{\n     newItem:\"\"\n   },\n"
+                },
+                {
+                    "date": 1629625089215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   data:{\n     newItem:\"\"\n   },\n   methods:{\n-    addItem:function(event){\n+    add:function(event){\n     alert();\n     }\n   }\n })\n"
+                },
+                {
+                    "date": 1629625144611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   data:{\n     newItem:\"\"\n   },\n   methods:{\n-    add:function(event){\n+    addItem:function(event){\n     alert();\n     }\n   }\n })\n"
+                },
+                {
+                    "date": 1629625156364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n     <input type=\"text\" v-model=\"msg\">\n-    <button @click=\"add\">表示</button>\n+    <button @click=\"addItem\">表示</button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629625164556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <input type=\"text\" v-model=\"msg\">\n+    <input type=\"text\" v-model=\"ny\">\n     <button @click=\"addItem\">表示</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629625170107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <input type=\"text\" v-model=\"ny\">\n+    <input type=\"text\" v-model=\"n\">\n     <button @click=\"addItem\">表示</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629625214279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <input type=\"text\" v-model=\"n\">\n+    <input type=\"text\" v-model=\"newItem\">\n     <button @click=\"addItem\">表示</button>\n+    <pre>{{ $data }}</pre>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629625241795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,19 +20,9 @@\n       this.number += 1;\n     },\n   }\n };\n-const app = new Vue({\n-  el:'#app',\n-  data:{\n-    newItem:\"\"\n-  },\n-  methods:{\n-    addItem:function(event){\n-    alert();\n-    }\n-  }\n-})\n+\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629625345577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     increment(){\n       this.number += 1;\n     },\n   }\n-};\n+}\n \n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629625352404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   methods: {\n     increment(){\n       this.number += 1;\n     },\n-  }\n+  })\n }\n \n </script>\n \n"
+                },
+                {
+                    "date": 1629625376580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,17 +10,17 @@\n \n <script>\n export default {\n   data: function(){\n-    return {\n+    return() {\n     number: 0\n     };\n   },\n   methods: {\n     increment(){\n       this.number += 1;\n     },\n-  })\n+  }\n }\n \n </script>\n \n"
+                },
+                {
+                    "date": 1629625383587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n <script>\n export default {\n   data: function(){\n-    return() {\n+    return {\n     number: 0\n     };\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629627876049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,17 +12,27 @@\n export default {\n   data: function(){\n     return {\n     number: 0\n-    };\n+    }\n   },\n   methods: {\n     increment(){\n       this.number += 1;\n     },\n   }\n }\n-\n+export default {\n+  el:'#app',\n+  data:{\n+    newItem:\"\"\n+  },\n+  methods:{\n+    addItem:function(event){\n+    alert();\n+    }\n+  },\n+} \n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629627895745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n </template>\n \n <script>\n export default {\n+  el:'#app',\n   data: function(){\n     return {\n     number: 0\n     }\n@@ -21,9 +22,8 @@\n     },\n   }\n }\n export default {\n-  el:'#app',\n   data:{\n     newItem:\"\"\n   },\n   methods:{\n"
+                },
+                {
+                    "date": 1629627902057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n <script>\n export default {\n   el:'#app',\n   data: function(){\n+    newItem:\"\"\n     return {\n     number: 0\n     }\n   },\n@@ -23,9 +24,8 @@\n   }\n }\n export default {\n   data:{\n-    newItem:\"\"\n   },\n   methods:{\n     addItem:function(event){\n     alert();\n"
+                },
+                {
+                    "date": 1629627914074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n <script>\n export default {\n   el:'#app',\n   data: function(){\n-    newItem:\"\"\n+    \"\"\n     return {\n     number: 0\n     }\n   },\n"
+                },
+                {
+                    "date": 1629627920733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,10 @@\n <script>\n export default {\n   el:'#app',\n   data: function(){\n-    \"\"\n     return {\n-    number: 0\n+      number: 0\n     }\n   },\n   methods: {\n     increment(){\n@@ -24,9 +23,10 @@\n   }\n }\n export default {\n   data:{\n-  },\n+    newItem:\"\"\n+    },\n   methods:{\n     addItem:function(event){\n     alert();\n     }\n"
+                },
+                {
+                    "date": 1629628150037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    <input type=\"text\" v-model=\"newItem\">\n-    <button @click=\"addItem\">表示</button>\n-    <pre>{{ $data }}</pre>\n+    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629628163703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n <template>\n   <div id=\"app\">\n     <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629628207089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n </template>\n \n <script>\n export default {\n-  el:'#app',\n   data: function(){\n     return {\n       number: 0\n     }\n@@ -19,8 +18,9 @@\n     },\n   }\n }\n export default {\n+  el:'#app',\n   data:{\n     newItem:\"\"\n     },\n   methods:{\n"
+                },
+                {
+                    "date": 1629628214372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,19 +17,8 @@\n       this.number += 1;\n     },\n   }\n }\n-export default {\n-  el:'#app',\n-  data:{\n-    newItem:\"\"\n-    },\n-  methods:{\n-    addItem:function(event){\n-    alert();\n-    }\n-  },\n-} \n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629628246466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,19 @@\n       this.number += 1;\n     },\n   }\n }\n+export default {\n+  el:'#app',\n+  data:{\n+    newItem:\"\"\n+    },\n+  methods:{\n+    addItem:function(event){\n+    alert();\n+    }\n+  },\n+} \n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629628264607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,19 +17,8 @@\n       this.number += 1;\n     },\n   }\n }\n-export default {\n-  el:'#app',\n-  data:{\n-    newItem:\"\"\n-    },\n-  methods:{\n-    addItem:function(event){\n-    alert();\n-    }\n-  },\n-} \n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629629548230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,20 +5,14 @@\n   </div>\n </template>\n \n <script>\n-export default {\n-  data: function(){\n-    return {\n-      number: 0\n-    }\n-  },\n-  methods: {\n-    increment(){\n-      this.number += 1;\n-    },\n+new Vue({\n+  el: '...',\n+  data: {\n+    checkedNames: []\n   }\n-}\n+})\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629629555805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,20 @@\n   </div>\n </template>\n \n <script>\n-new Vue({\n-  el: '...',\n-  data: {\n-    checkedNames: []\n+export default {\n+  data: function(){\n+    return {\n+      number: 0\n+    }\n+  },\n+  methods: {\n+    increment(){\n+      this.number += 1;\n+    },\n   }\n-})\n+}\n </script>\n \n <style>\n #app{\n"
                 }
             ],
             "date": 1629467305510,

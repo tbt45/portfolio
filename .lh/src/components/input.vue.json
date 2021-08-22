@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/components/input.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1629628136736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629628153025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n-te\n\\ No newline at end of file\n+<template>\n+    <input type=\"text\" v-model=\"newItem\">\n+    <button @click=\"addItem\">表示</button>\n+    <pre>{{ $data }}</pre>\n+</template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628167608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <template>\n+\n     <input type=\"text\" v-model=\"newItem\">\n     <button @click=\"addItem\">表示</button>\n     <pre>{{ $data }}</pre>\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628174324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-\n+    <div></div>\n     <input type=\"text\" v-model=\"newItem\">\n     <button @click=\"addItem\">表示</button>\n     <pre>{{ $data }}</pre>\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628182302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-    <div></div>\n+    <div>\n     <input type=\"text\" v-model=\"newItem\">\n     <button @click=\"addItem\">表示</button>\n     <pre>{{ $data }}</pre>\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628189701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n     <div>\n-    <input type=\"text\" v-model=\"newItem\">\n+        <input type=\"text\" v-model=\"newItem\">\n     <button @click=\"addItem\">表示</button>\n     <pre>{{ $data }}</pre>\n+    </div>\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628219315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n     <div>\n         <input type=\"text\" v-model=\"newItem\">\n-    <button @click=\"addItem\">表示</button>\n-    <pre>{{ $data }}</pre>\n-    </div>\n-</template>\n\\ No newline at end of file\n+        <button @click=\"addItem\">表示</button>\n+        <pre>{{ $data }}</pre>\n+        </div>\n+</template>\n+\n"
+                },
+                {
+                    "date": 1629628225639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,5 @@\n         <pre>{{ $data }}</pre>\n         </div>\n </template>\n \n+sc\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628232000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,9 @@\n         <pre>{{ $data }}</pre>\n         </div>\n </template>\n \n-sc\n\\ No newline at end of file\n+<script>\n+export default {\n+    \n+}\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628237390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,5 @@\n         <button @click=\"addItem\">表示</button>\n         <pre>{{ $data }}</pre>\n         </div>\n </template>\n-\n-<script>\n-export default {\n-    \n-}\n-</script>\n\\ No newline at end of file\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628250456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <div>\n         <input type=\"text\" v-model=\"newItem\">\n         <button @click=\"addItem\">表示</button>\n         <pre>{{ $data }}</pre>\n-        </div>\n+    </div>\n </template>\n\\ No newline at end of file\n-    \n+\n"
+                },
+                {
+                    "date": 1629628259796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,8 @@\n         <button @click=\"addItem\">表示</button>\n         <pre>{{ $data }}</pre>\n     </div>\n </template>\n+\n+<script>\n+\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628268270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,18 @@\n     </div>\n </template>\n \n <script>\n+export default {\n+  el:'#app',\n+  data:{\n+    newItem:\"\"\n+    },\n+  methods:{\n+    addItem:function(event){\n+    alert();\n+    }\n+  },\n+} \n \n+\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629628293277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n <script>\n export default {\n   el:'#app',\n-  data:{\n+    data:{\n     newItem:\"\"\n     },\n   methods:{\n     addItem:function(event){\n"
+                },
+                {
+                    "date": 1629628299089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   el:'#app',\n     data:{\n     newItem:\"\"\n     },\n-  methods:{\n+    methods:{\n     addItem:function(event){\n     alert();\n     }\n   },\n"
+                },
+                {
+                    "date": 1629628305536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,13 @@\n \n <script>\n export default {\n   el:'#app',\n-    data:{\n+    data:function() {\n+return {\n     newItem:\"\"\n-    },\n+    };\n+},\n     methods:{\n     addItem:function(event){\n     alert();\n     }\n"
+                },
+                {
+                    "date": 1629628315062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default {\n   el:'#app',\n     data:function() {\n-return {\n+    return {\n     newItem:\"\"\n     };\n },\n     methods:{\n"
+                },
+                {
+                    "date": 1629628321532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     data:function() {\n     return {\n     newItem:\"\"\n     };\n-},\n+    },\n     methods:{\n     addItem:function(event){\n     alert();\n     }\n"
+                },
+                {
+                    "date": 1629628326927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-  el:'#app',\n+    el:'#app',\n     data:function() {\n     return {\n     newItem:\"\"\n     };\n@@ -17,9 +17,9 @@\n     methods:{\n     addItem:function(event){\n     alert();\n     }\n-  },\n+    },\n } \n \n \n </script>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1629628136736,
+            "name": "Commit-0",
+            "content": "te"
+        }
+    ]
+}
