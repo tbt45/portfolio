@@ -1,0 +1,478 @@
+{
+    "sourceFile": "src/components/Test.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 115,
+            "patches": [
+                {
+                    "date": 1629633293022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629633306740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <button @click=\"increment\">ボタン</button>\n-    <p>いいね({{ number }})</p>\n+\n     <table>\n     <!-- テーブルヘッダー -->\n     <thead>\n       <tr>\n"
+                },
+                {
+                    "date": 1629633356131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n <template>\n   <div id=\"app\">\n-\n     <table>\n-    <!-- テーブルヘッダー -->\n     <thead>\n       <tr>\n         <th class=\"id\">ID</th>\n         <th class=\"comment\">コメント</th>\n"
+                },
+                {
+                    "date": 1629633404987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,8 @@\n       number: 0\n     }\n   },\n   methods: {\n-    increment(){\n-      this.number += 1;\n-    },\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629633412490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n <script>\n export default {\n   data: function(){\n     return {\n-      number: 0\n     }\n   },\n   methods: {\n   }\n"
+                },
+                {
+                    "date": 1629633439890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \n <script>\n export default {\n   data: function(){\n-    return {\n+  return {\n     }\n   },\n   methods: {\n   }\n"
+                },
+                {
+                    "date": 1629639097543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,27 +1,15 @@\n <template>\n   <div id=\"app\">\n-    <table>\n-    <thead>\n-      <tr>\n-        <th class=\"id\">ID</th>\n-        <th class=\"comment\">コメント</th>\n-        <th class=\"state\">状態</th>\n-        <th class=\"button\">-</th>\n-      </tr>\n-    </thead>\n-    <tbody>\n-      <!-- [1] ここに <tr> で ToDo の要素を1行づつ繰り返し表示したい -->\n-    </tbody>\n-  </table>\n+\n   </div>\n </template>\n \n <script>\n export default {\n   data: function(){\n   return {\n-    }\n+  }\n   },\n   methods: {\n   }\n }\n"
+                },
+                {
+                    "date": 1629639104712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-\n+    <input type=\"text\">\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639109990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\">\n+    <input type=\"text\" @>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639120492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" @>\n+    <input type=\"text\" @change=\"O\">\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639127641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" @change=\"O\">\n+    <input type=\"text\" @change=\"Onchange\">\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639133341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" @change=\"Onchange\">\n+    bu\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639139455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" @change=\"Onchange\">\n-    bu\n+    <button @></button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639146144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" @change=\"Onchange\">\n-    <button @></button>\n+    <button @click=\"OnCl\"></button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639179101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" @change=\"Onchange\">\n-    <button @click=\"OnCl\"></button>\n+    <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629639213053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n   return {\n   }\n   },\n   methods: {\n+    \n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629639218579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   return {\n   }\n   },\n   methods: {\n-    \n+    Onc\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629639224130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   return {\n   }\n   },\n   methods: {\n-    Onc\n+    Onchange{}\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629639229438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n   return {\n   }\n   },\n   methods: {\n-    Onchange{}\n+    Onchange(){\n+\n+    }\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629639235419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\n   },\n   methods: {\n     Onchange(){\n-\n+console\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629639242482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\n   },\n   methods: {\n     Onchange(){\n-console\n+    console\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629639248075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\n   },\n   methods: {\n     Onchange(){\n-    console\n+    console.log\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629639254735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\n   },\n   methods: {\n     Onchange(){\n-    console.log\n+    console.log('')\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629639261622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   }\n   },\n   methods: {\n     Onchange(){\n-    console.log('')\n+    console.log('変更')\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629639289228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" @change=\"Onchange\">\n+    <input type=\"text\" @change=\"On Change\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n@@ -12,9 +12,9 @@\n   }\n   },\n   methods: {\n     Onchange(){\n-    console.log('変更')\n+    console.log('変更');\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629639297324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" @change=\"On Change\">\n+    <input type=\"text\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n@@ -11,9 +11,9 @@\n   return {\n   }\n   },\n   methods: {\n-    Onchange(){\n+    OnChange(){\n     console.log('変更');\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1629639317993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n </template>\n \n <script>\n export default {\n-  data: function(){\n+  data(){\n   return {\n   }\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629639706392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" @change=\"OnChange\">\n+    <input type=\"text\"  @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n <script>\n export default {\n-  data(){\n+  data (){\n   return {\n   }\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629639712145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\"  @change=\"OnChange\">\n+    <input type=\"text\" v-model=\"mess\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629639798874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" v-model=\"mess\" @change=\"OnChange\">\n+    <input type=\"text\" v-model=\"message\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n <script>\n export default {\n   data (){\n   return {\n+    \n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629639808013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n export default {\n   data (){\n   return {\n-    \n+    m\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629639813356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n export default {\n   data (){\n   return {\n-    m\n+    message\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629639819962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n export default {\n   data (){\n   return {\n-    message\n+    message: va\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629639828365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n <script>\n export default {\n   data (){\n   return {\n-    message: va\n+    message: []\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629639908895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" v-model=\"message\" @change=\"OnChange\">\n+    <input type=\"text\" v-model=\"text-\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629639922970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" v-model=\"text-\" @change=\"OnChange\">\n+    <input type=\"text\" v-model = \"text-Input\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629639941430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" v-model = \"text-Input\" @change=\"OnChange\">\n+    <input type=\"text\" v-model = \"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629639948395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" v-model = \"textInput\" @change=\"OnChange\">\n+    <input type=\"text\"v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629639970894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,15 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\"v-model=\"textInput\" @change=\"OnChange\">\n+    <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n   </div>\n </template>\n \n <script>\n export default {\n   data (){\n+    t\n   return {\n     message: []\n   }\n   },\n"
+                },
+                {
+                    "date": 1629639979569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n export default {\n   data (){\n-    t\n+    textI\n   return {\n     message: []\n   }\n   },\n"
+                },
+                {
+                    "date": 1629639984773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n export default {\n   data (){\n-    textI\n+    textInput: \n   return {\n     message: []\n   }\n   },\n"
+                },
+                {
+                    "date": 1629639992865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n export default {\n   data (){\n-    textInput: \n+    textInput: '',\n   return {\n     message: []\n   }\n   },\n"
+                },
+                {
+                    "date": 1629639998960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n export default {\n   data (){\n-    textInput: '',\n+  textInput: '',\n   return {\n     message: []\n   }\n   },\n"
+                },
+                {
+                    "date": 1629640017426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n </template>\n \n <script>\n export default {\n-  data (){\n-  textInput: '',\n+  data function(){\n+    textInput: '',\n   return {\n     message: []\n   }\n   },\n"
+                },
+                {
+                    "date": 1629640030364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n </template>\n \n <script>\n export default {\n-  data function(){\n+  data: function(){\n     textInput: '',\n-  return {\n+    return {\n     message: []\n   }\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629640103743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,9 @@\n \n <script>\n export default {\n   data: function(){\n-    textInput: '',\n-    return {\n+  return {\n     message: []\n   }\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629640112026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n export default {\n   data: function(){\n   return {\n     message: []\n+    text\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640119725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n export default {\n   data: function(){\n   return {\n     message: []\n-    text\n+    textInput: ''\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640127390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n <script>\n export default {\n   data: function(){\n   return {\n-    message: []\n-    textInput: ''\n+    textInput: '',\n   }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640138011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n <script>\n export default {\n   data: function(){\n-  return {\n+    return {\n     textInput: '',\n   }\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629640143241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n <script>\n export default {\n   data: function(){\n     return {\n-    textInput: '',\n-  }\n+      textInput: '',\n+    }\n   },\n   methods: {\n     OnChange(){\n     console.log('変更');\n"
+                },
+                {
+                    "date": 1629640152293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     }\n   },\n   methods: {\n     OnChange(){\n-    console.log('変更');\n+      console.log('変更');\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629640435310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n+    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629640442289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    \n+    <p>{{</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629640449791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>{{</p>\n+    <p>{{ textInput</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629640531565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n <template>\n   <div id=\"app\">\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>{{ textInput</p>\n+    <p>{{ textInput }}</p>\n   </div>\n </template>\n \n <script>\n export default {\n   data: function(){\n     return {\n-      textInput: '',\n+      textInput: ,\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640536769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default {\n   data: function(){\n     return {\n-      textInput: ,\n+      textInput: [],\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640551566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <script>\n export default {\n   data: function(){\n     return {\n-      textInput: [],\n+      textInput: ,\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640574358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,12 @@\n </template>\n \n <script>\n export default {\n+  \n   data: function(){\n     return {\n-      textInput: ,\n+      textInput: '',\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640579869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-  \n+  el: \n   data: function(){\n     return {\n       textInput: '',\n     }\n"
+                },
+                {
+                    "date": 1629640586700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-  el: \n+  el: #app;\n   data: function(){\n     return {\n       textInput: '',\n     }\n"
+                },
+                {
+                    "date": 1629640593135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-  el: #app;\n+  el: '#app;\n   data: function(){\n     return {\n       textInput: '',\n     }\n"
+                },
+                {
+                    "date": 1629640861256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n </template>\n \n <script>\n export default {\n-  el: '#app;\n+  el: '#app',\n   data: function(){\n     return {\n-      textInput: '',\n+      textInput: ,\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629640873345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n export default {\n   el: '#app',\n   data: function(){\n     return {\n-      textInput: ,\n+      textInput: '',\n     }\n-  },\n+  }\n   methods: {\n     OnChange(){\n       console.log('変更');\n     }\n"
+                },
+                {
+                    "date": 1629640952528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n+    <!-- <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\"> -->\n     <button @click=\"OnClick\">入力</button>\n     <p>{{ textInput }}</p>\n   </div>\n </template>\n@@ -12,9 +12,9 @@\n   data: function(){\n     return {\n       textInput: '',\n     }\n-  }\n+  },\n   methods: {\n     OnChange(){\n       console.log('変更');\n     }\n"
+                },
+                {
+                    "date": 1629640961333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,29 @@\n-<template>\n-  <div id=\"app\">\n-    <!-- <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\"> -->\n-    <button @click=\"OnClick\">入力</button>\n-    <p>{{ textInput }}</p>\n-  </div>\n-</template>\n+// <template>\n+//   <div id=\"app\">\n+//     <!-- <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\"> -->\n+//     <button @click=\"OnClick\">入力</button>\n+//     <p>{{ textInput }}</p>\n+//   </div>\n+// </template>\n \n-<script>\n-export default {\n-  el: '#app',\n-  data: function(){\n-    return {\n-      textInput: '',\n-    }\n-  },\n-  methods: {\n-    OnChange(){\n-      console.log('変更');\n-    }\n-  }\n-}\n\\ No newline at end of file\n-</script>\n+// <script>\n+// export default {\n+//   el: '#app',\n+//   data: function(){\n+//     return {\n+//       textInput: '',\n+//     }\n+//   },\n+//   methods: {\n+//     OnChange(){\n+//       console.log('変更');\n+//     }\n+//   }\n+// }\n+// </script>\n \n-<style>\n-#app{\n-  color: red;\n-}\n-</style>\n+// <style>\n+// #app{\n+//   color: red;\n+// }\n+// </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629640970394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,29 @@\n-// <template>\n-//   <div id=\"app\">\n-//     <!-- <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\"> -->\n-//     <button @click=\"OnClick\">入力</button>\n-//     <p>{{ textInput }}</p>\n-//   </div>\n-// </template>\n+<template>\n+  <div id=\"app\">\n+    <!-- <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\"> -->\n+    <button @click=\"OnClick\">入力</button>\n+    <p>{{ textInput }}</p>\n+  </div>\n+</template>\n \n-// <script>\n-// export default {\n-//   el: '#app',\n-//   data: function(){\n-//     return {\n-//       textInput: '',\n-//     }\n-//   },\n-//   methods: {\n-//     OnChange(){\n-//       console.log('変更');\n-//     }\n-//   }\n-// }\n\\ No newline at end of file\n-// </script>\n+<script>\n+export default {\n+  el: '#app',\n+  data: function(){\n+    return {\n+      textInput: '',\n+    }\n+  },\n+  methods: {\n+    OnChange(){\n+      console.log('変更');\n+    }\n+  }\n+}\n+</script>\n \n-// <style>\n-// #app{\n-//   color: red;\n-// }\n-// </style>\n+<style>\n+#app{\n+  color: red;\n+}\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629640976401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,29 @@\n-<template>\n-  <div id=\"app\">\n-    <!-- <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\"> -->\n-    <button @click=\"OnClick\">入力</button>\n-    <p>{{ textInput }}</p>\n-  </div>\n-</template>\n+// <template>\n+//   <div id=\"app\">\n+//     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n+//     <button @click=\"OnClick\">入力</button>\n+//     <p>{{ textInput }}</p>\n+//   </div>\n+// </template>\n \n-<script>\n-export default {\n-  el: '#app',\n-  data: function(){\n-    return {\n-      textInput: '',\n-    }\n-  },\n-  methods: {\n-    OnChange(){\n-      console.log('変更');\n-    }\n-  }\n-}\n\\ No newline at end of file\n-</script>\n+// <script>\n+// export default {\n+//   el: '#app',\n+//   data: function(){\n+//     return {\n+//       textInput: '',\n+//     }\n+//   },\n+//   methods: {\n+//     OnChange(){\n+//       console.log('変更');\n+//     }\n+//   }\n+// }\n+// </script>\n \n-<style>\n-#app{\n-  color: red;\n-}\n-</style>\n+// <style>\n+// #app{\n+//   color: red;\n+// }\n+// </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629640984804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,29 @@\n-// <template>\n-//   <div id=\"app\">\n-//     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n-//     <button @click=\"OnClick\">入力</button>\n-//     <p>{{ textInput }}</p>\n-//   </div>\n-// </template>\n+<template>\n+  <div id=\"app\">\n+    <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n+    <button @click=\"OnClick\">入力</button>\n+    <p>{{ textInput }}</p>\n+  </div>\n+</template>\n \n-// <script>\n-// export default {\n-//   el: '#app',\n-//   data: function(){\n-//     return {\n-//       textInput: '',\n-//     }\n-//   },\n-//   methods: {\n-//     OnChange(){\n-//       console.log('変更');\n-//     }\n-//   }\n-// }\n\\ No newline at end of file\n-// </script>\n+<script>\n+export default {\n+  el: '#app',\n+  data: function(){\n+    return {\n+      textInput: '',\n+    }\n+  },\n+  methods: {\n+    // OnChange(){\n+    //   console.log('変更');\n+    }\n+  }\n+}\n+</script>\n \n-// <style>\n-// #app{\n-//   color: red;\n-// }\n-// </style>\n+<style>\n+#app{\n+  color: red;\n+}\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629640992028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,11 @@\n   },\n   methods: {\n     // OnChange(){\n     //   console.log('変更');\n-    }\n-  }\n-}\n+//     }\n+//   }\n+// }\n </script>\n \n <style>\n #app{\n"
+                },
+                {
+                    "date": 1629641002806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,16 @@\n   </div>\n </template>\n \n <script>\n-export default {\n-  el: '#app',\n-  data: function(){\n-    return {\n-      textInput: '',\n-    }\n-  },\n-  methods: {\n+// export default {\n+//   el: '#app',\n+//   data: function(){\n+//     return {\n+//       textInput: '',\n+//     }\n+//   },\n+//   methods: {\n     // OnChange(){\n     //   console.log('変更');\n //     }\n //   }\n"
+                },
+                {
+                    "date": 1629641010611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n-  <div id=\"app\">\n+  <!-- <div id=\"app\">\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n     <p>{{ textInput }}</p>\n-  </div>\n+  </div> -->\n </template>\n \n <script>\n // export default {\n@@ -22,8 +22,8 @@\n // }\n </script>\n \n <style>\n-#app{\n+/* #app{\n   color: red;\n-}\n+} */\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629641023696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,29 @@\n <template>\n-  <!-- <div id=\"app\">\n+  <div id=\"app\">\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n     <p>{{ textInput }}</p>\n-  </div> -->\n+  </div>\n </template>\n \n <script>\n-// export default {\n-//   el: '#app',\n-//   data: function(){\n-//     return {\n-//       textInput: '',\n-//     }\n-//   },\n-//   methods: {\n-    // OnChange(){\n-    //   console.log('変更');\n-//     }\n-//   }\n-// }\n+export default {\n+  el: '#app',\n+  data: function(){\n+    return {\n+      textInput: '',\n+    }\n+  },\n+  methods: {\n+    OnChange(){\n+      console.log('変更');\n+    }\n+  }\n+}\n </script>\n \n <style>\n-/* #app{\n+#app{\n   color: red;\n-} */\n+}\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629641043827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,8 @@\n       textInput: '',\n     }\n   },\n   methods: {\n-    OnChange(){\n-      console.log('変更');\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629641061162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n     return {\n       textInput: '',\n     }\n   },\n-  methods: {\n+  methods: {}\n+  \n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629641067749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n       textInput: '',\n     }\n   },\n   methods: {}\n-  \n+\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629641078425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,9 @@\n     return {\n       textInput: '',\n     }\n   },\n-  methods: {}\n-\n+  methods: {\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629641089884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n       textInput: '',\n     }\n   },\n   methods: {\n-    }\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629641097112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,11 @@\n       textInput: '',\n     }\n   },\n   methods: {\n+    OnChange(){\n+      console.log('変更');\n+    }\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629641115121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n export default {\n-  el: '#app',\n+  // el: '#app',\n   data: function(){\n     return {\n       textInput: '',\n     }\n"
+                },
+                {
+                    "date": 1629641240958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div id=\"app\">\n+  <div>\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n     <p>{{ textInput }}</p>\n   </div>\n"
+                },
+                {
+                    "date": 1629641358838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>{{ textInput }}</p>\n+    <p>{{ textいnput }}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629641371099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>{{ textいnput }}</p>\n+    <p>{{ textInput }}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629641385998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>{{ textInput }}</p>\n+    <p>{{{ textInput }}</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629641391832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n     <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>{{{ textInput }}</p>\n+    <p>[{{ textInput }}]</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629641472711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n export default {\n   // el: '#app',\n   data: function(){\n     return {\n-      textInput: '',\n+      textInput: '初期値はここに',\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629642782720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n export default {\n   // el: '#app',\n   data: function(){\n     return {\n-      textInput: '初期値はここに',\n+      textInput: '',\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629642809850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"textInput\" @change=\"OnChange\">\n+    <input type=\"text\" v-model=\"textInput\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642821985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"textInput\">\n+    <input type=\"text\" v-model=\"new\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642834294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"new\">\n+    <input type=\"text\" v-model=\"newTodo \">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642845069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo \">\n+    <input type=\"text\" v-model=\"newTodo @keydown\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642850502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo @keydown\">\n+    <input type=\"text\" v-model=\"newTodo @keydown=\"\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642858640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo @keydown=\"\">\n+    <input type=\"text\" v-model=\"newTodo @keydown.e=\"\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642869148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo @keydown.e=\"\">\n+    <input type=\"text\" v-model=\"newTodo @keydown.enter=\"addT\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629642903470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo @keydown.enter=\"addT\">\n+    <input type=\"text\" v-model=\"newTodo @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n@@ -11,8 +11,9 @@\n   // el: '#app',\n   data: function(){\n     return {\n       textInput: '',\n+      new\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629642911411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   // el: '#app',\n   data: function(){\n     return {\n       textInput: '',\n-      new\n+      newTodo: \n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629642917410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   // el: '#app',\n   data: function(){\n     return {\n       textInput: '',\n-      newTodo: \n+      newTodo: ''\n     }\n   },\n   methods: {\n     OnChange(){\n"
+                },
+                {
+                    "date": 1629642927035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n   // el: '#app',\n   data: function(){\n     return {\n       textInput: '',\n-      newTodo: ''\n-    }\n+      newTodo: '',\n+    };\n   },\n   methods: {\n     OnChange(){\n       console.log('変更');\n"
+                },
+                {
+                    "date": 1629642947135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       newTodo: '',\n     };\n   },\n   methods: {\n-    OnChange(){\n+    add(){\n       console.log('変更');\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1629642962341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n       newTodo: '',\n     };\n   },\n   methods: {\n-    add(){\n-      console.log('変更');\n+    addTodo(){\n+      this;\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642971699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this;\n+      this.$;\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642980002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this.$;\n+      this.$emit();\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642985742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this.$emit();\n+      this.$emit('add);\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642991568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this.$emit('add);\n+      this.$emit('add-todo);\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642997202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this.$emit('add-todo);\n+      this.$emit('add-todo',);\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629643005592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this.$emit('add-todo',);\n+      this.$emit('add-todo',this.ne);\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629643016667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n     };\n   },\n   methods: {\n     addTodo(){\n-      this.$emit('add-todo',this.ne);\n+      this.$emit('add-todo',this.newTodo);\n+      \n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629643022185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   },\n   methods: {\n     addTodo(){\n       this.$emit('add-todo',this.newTodo);\n-      \n+      this\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629643029457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   },\n   methods: {\n     addTodo(){\n       this.$emit('add-todo',this.newTodo);\n-      this\n+      this.newTodo = \n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629643035058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   },\n   methods: {\n     addTodo(){\n       this.$emit('add-todo',this.newTodo);\n-      this.newTodo = \n+      this.newTodo = '';\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629643049358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo @keydown.enter=\"addTodo\">\n+    <input type=\"text\" v-model=\"newTodo \n+    @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629643055469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n   <div>\n-    <input type=\"text\" v-model=\"newTodo \n+    <input type=\"text\" \n+    v-model=\"newTodo \n     @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n"
+                },
+                {
+                    "date": 1629643073202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n-    <input type=\"text\" \n-    v-model=\"newTodo \n-    @keydown.enter=\"addTodo\">\n+    <input \n+      v-model=\"newTodo \n+      @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1629643083618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n-    <input \n-      v-model=\"newTodo \n+    <input\n+      v-model=\"newTodo\" \n       @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n     <p>[{{ textInput }}]</p>\n   </div>\n"
+                },
+                {
+                    "date": 1629643137994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <input\n       v-model=\"newTodo\" \n       @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>[{{ textInput }}]</p>\n+    <p>[{{ new }}]</p>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629643145909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,18 +3,17 @@\n     <input\n       v-model=\"newTodo\" \n       @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>[{{ new }}]</p>\n+    <p>[{{ newTodo }}]</p>\n   </div>\n </template>\n \n <script>\n export default {\n   // el: '#app',\n   data: function(){\n     return {\n-      textInput: '',\n       newTodo: '',\n     };\n   },\n   methods: {\n"
+                }
+            ],
+            "date": 1629633293022,
+            "name": "Commit-0",
+            "content": "<template>\n  <div id=\"app\">\n    <button @click=\"increment\">ボタン</button>\n    <p>いいね({{ number }})</p>\n    <table>\n    <!-- テーブルヘッダー -->\n    <thead>\n      <tr>\n        <th class=\"id\">ID</th>\n        <th class=\"comment\">コメント</th>\n        <th class=\"state\">状態</th>\n        <th class=\"button\">-</th>\n      </tr>\n    </thead>\n    <tbody>\n      <!-- [1] ここに <tr> で ToDo の要素を1行づつ繰り返し表示したい -->\n    </tbody>\n  </table>\n  </div>\n</template>\n\n<script>\nexport default {\n  data: function(){\n    return {\n      number: 0\n    }\n  },\n  methods: {\n    increment(){\n      this.number += 1;\n    },\n  }\n}\n</script>\n\n<style>\n#app{\n  color: red;\n}\n</style>"
+        }
+    ]
+}

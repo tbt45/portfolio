@@ -1,0 +1,330 @@
+{
+    "sourceFile": "src/components/TestSecond.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 78,
+            "patches": [
+                {
+                    "date": 1629631855660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629631861742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         newItem:\"\"\n         };\n     },\n     methods:{\n-        addItem:function(e){\n+        addItem:function(){\n         alert();\n         },\n     }\n } \n"
+                },
+                {
+                    "date": 1629632161173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n     <div>\n         <input type=\"text\" v-model=\"newItem\">\n+        \n         <button @click=\"addItem\">表示</button>\n         <pre>{{ $data }}</pre>\n     </div>\n </template>\n"
+                },
+                {
+                    "date": 1629632168917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div>\n         <input type=\"text\" v-model=\"newItem\">\n-        \n+        <p>: {{ message }}</p>\n         <button @click=\"addItem\">表示</button>\n         <pre>{{ $data }}</pre>\n     </div>\n </template>\n"
+                },
+                {
+                    "date": 1629632241353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div>\n         <input type=\"text\" v-model=\"newItem\">\n-        <p>: {{ message }}</p>\n-        <button @click=\"addItem\">表示</button>\n+        <p>入力内容: {{ message }}</p>\n+        <!-- <button @click=\"addItem\">表示</button> -->\n         <pre>{{ $data }}</pre>\n     </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629632305326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,16 @@\n         <input type=\"text\" v-model=\"newItem\">\n         <p>入力内容: {{ message }}</p>\n         <!-- <button @click=\"addItem\">表示</button> -->\n         <pre>{{ $data }}</pre>\n+        <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n+<label for=\"jack\">Jack</label>\n+<input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n+<label for=\"john\">John</label>\n+<input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\">\n+<label for=\"mike\">Mike</label>\n+<br>\n+<span>Checked names: {{ checkedNames }}</span>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629632310663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n         <input type=\"text\" v-model=\"newItem\">\n         <p>入力内容: {{ message }}</p>\n         <!-- <button @click=\"addItem\">表示</button> -->\n         <pre>{{ $data }}</pre>\n+        \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n <label for=\"jack\">Jack</label>\n <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n <label for=\"john\">John</label>\n"
+                },
+                {
+                    "date": 1629632323172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n         <input type=\"text\" v-model=\"newItem\">\n         <p>入力内容: {{ message }}</p>\n         <!-- <button @click=\"addItem\">表示</button> -->\n         <pre>{{ $data }}</pre>\n-        \n+\n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n-<label for=\"jack\">Jack</label>\n+　　　　　<label for=\"jack\">Jack</label>\n <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n <label for=\"john\">John</label>\n <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\">\n <label for=\"mike\">Mike</label>\n"
+                },
+                {
+                    "date": 1629632330697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n         <pre>{{ $data }}</pre>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n 　　　　　<label for=\"jack\">Jack</label>\n-<input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n-<label for=\"john\">John</label>\n+　　　　　<input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n+        <label for=\"john\">John</label>\n <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\">\n <label for=\"mike\">Mike</label>\n <br>\n <span>Checked names: {{ checkedNames }}</span>\n"
+                },
+                {
+                    "date": 1629632336861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         <pre>{{ $data }}</pre>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n 　　　　　<label for=\"jack\">Jack</label>\n-　　　　　<input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n+         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\">\n <label for=\"mike\">Mike</label>\n <br>\n"
+                },
+                {
+                    "date": 1629632342837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n         <!-- <button @click=\"addItem\">表示</button> -->\n         <pre>{{ $data }}</pre>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n-　　　　　<label for=\"jack\">Jack</label>\n-         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n+        <label for=\"jack\">Jack</label>\n+        <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\">\n <label for=\"mike\">Mike</label>\n <br>\n"
+                },
+                {
+                    "date": 1629632351205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n         <label for=\"jack\">Jack</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n-<input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\">\n-<label for=\"mike\">Mike</label>\n+        <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n+        <label for=\"mike\">Mike</label>\n <br>\n <span>Checked names: {{ checkedNames }}</span>\n     </div>\n </template>\n"
+                },
+                {
+                    "date": 1629632357366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">Mike</label>\n-<br>\n-<span>Checked names: {{ checkedNames }}</span>\n+        <br>\n+        <span>Checked names: {{ checkedNames }}</span>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629632538486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n \n export default {\n     el:'#app',\n         data:function() {\n+            \n         return {\n         newItem:\"\"\n         };\n     },\n"
+                },
+                {
+                    "date": 1629632596845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \n export default {\n     el:'#app',\n         data:function() {\n-            \n+        \n         return {\n         newItem:\"\"\n         };\n     },\n"
+                },
+                {
+                    "date": 1629632605521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     el:'#app',\n         data:function() {\n         \n         return {\n-        newItem:\"\"\n+        checkedNames: []\n         };\n     },\n     methods:{\n         addItem:function(){\n"
+                },
+                {
+                    "date": 1629632624101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,6 @@\n <template>\n     <div>\n-        <input type=\"text\" v-model=\"newItem\">\n-        <p>入力内容: {{ message }}</p>\n         <!-- <button @click=\"addItem\">表示</button> -->\n         <pre>{{ $data }}</pre>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n@@ -21,9 +19,8 @@\n \n export default {\n     el:'#app',\n         data:function() {\n-        \n         return {\n         checkedNames: []\n         };\n     },\n"
+                },
+                {
+                    "date": 1629632629413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n <template>\n     <div>\n         <!-- <button @click=\"addItem\">表示</button> -->\n-        <pre>{{ $data }}</pre>\n-\n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n         <label for=\"jack\">Jack</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n"
+                },
+                {
+                    "date": 1629632634483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <!-- <button @click=\"addItem\">表示</button> -->\n+        \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n         <label for=\"jack\">Jack</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n"
+                },
+                {
+                    "date": 1629632652680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div>\n-        \n+\n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n-        <label for=\"jack\">Jack</label>\n+        <label for=\"jack\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">John</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">Mike</label>\n"
+                },
+                {
+                    "date": 1629632658695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n         <label for=\"jack\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n-        <label for=\"john\">John</label>\n+        <label for=\"john\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n-        <label for=\"mike\">Mike</label>\n+        <label for=\"mike\">3</label>\n         <br>\n         <span>Checked names: {{ checkedNames }}</span>\n     </div>\n </template>\n"
+                },
+                {
+                    "date": 1629632671485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         <label for=\"john\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">3</label>\n         <br>\n-        <span>Checked names: {{ checkedNames }}</span>\n+        <span> {{ checkedNames }}</span>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629632677416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         <label for=\"john\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">3</label>\n         <br>\n-        <span> {{ checkedNames }}</span>\n+        <span>チェック {{ checked }}</span>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629632682633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         <label for=\"john\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">3</label>\n         <br>\n-        <span>チェック {{ checked }}</span>\n+        <span>チェック {{ check }}</span>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629632690920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        checkedNames: []\n+        check: []\n         };\n     },\n     methods:{\n         addItem:function(){\n"
+                },
+                {
+                    "date": 1629632710984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n-        <label for=\"jack\">1</label>\n+        <label for=\"１\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">3</label>\n"
+                },
+                {
+                    "date": 1629632716222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n-        <label for=\"１\">1</label>\n+        <label for=\"\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"john\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">3</label>\n"
+                },
+                {
+                    "date": 1629632721506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n <template>\n     <div>\n \n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n-        <label for=\"\">1</label>\n+        <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n-        <label for=\"john\">2</label>\n+        <label for=\"2\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n         <label for=\"mike\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n"
+                },
+                {
+                    "date": 1629632744876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n         <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n         <label for=\"2\">2</label>\n-        <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"checkedNames\"> \n-        <label for=\"mike\">3</label>\n+        <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"check\"> \n+        <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n     </div>\n </template>\n"
+                },
+                {
+                    "date": 1629632752428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n     <div>\n \n-        <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"checkedNames\">\n+        <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"check\">\n         <label for=\"1\">1</label>\n-        <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"checkedNames\">\n+        <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"check\">\n         <label for=\"2\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n"
+                },
+                {
+                    "date": 1629632774789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div>\n \n-        <input type=\"checkbox\" id=\"jack\" value=\"Jack\" v-model=\"check\">\n+        <input type=\"checkbox\" id=\"jack\" value=\"\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"check\">\n         <label for=\"2\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"check\"> \n"
+                },
+                {
+                    "date": 1629632779867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div>\n \n-        <input type=\"checkbox\" id=\"jack\" value=\"\" v-model=\"check\">\n+        <input type=\"checkbox\" id=\"jack\" value=\"fi\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"check\">\n         <label for=\"2\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"check\"> \n"
+                },
+                {
+                    "date": 1629632786235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n     <div>\n \n-        <input type=\"checkbox\" id=\"jack\" value=\"fi\" v-model=\"check\">\n+        <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n-        <input type=\"checkbox\" id=\"john\" value=\"John\" v-model=\"check\">\n+        <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n         <label for=\"2\">2</label>\n         <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n"
+                },
+                {
+                    "date": 1629632823200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n         <label for=\"2\">2</label>\n-        <input type=\"checkbox\" id=\"mike\" value=\"Mike\" v-model=\"check\"> \n+        <input type=\"checkbox\" id=\"mike\" value=\"\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n     </div>\n"
+                },
+                {
+                    "date": 1629632828770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n         <label for=\"2\">2</label>\n-        <input type=\"checkbox\" id=\"mike\" value=\"\" v-model=\"check\"> \n+        <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n     </div>\n"
+                },
+                {
+                    "date": 1629632856097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n     <div>\n-\n+        <input v-model=\"message\" placeholder=\"edit me\">\n+<p>Message is: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n         <label for=\"2\">2</label>\n"
+                },
+                {
+                    "date": 1629632863305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div>\n         <input v-model=\"message\" placeholder=\"edit me\">\n-<p>Message is: {{ message }}</p>\n+        <p>Message is: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n         <label for=\"2\">2</label>\n"
+                },
+                {
+                    "date": 1629632870484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div>\n         <input v-model=\"message\" placeholder=\"edit me\">\n-        <p>Message is: {{ message }}</p>\n+        <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n         <label for=\"2\">2</label>\n"
+                },
+                {
+                    "date": 1629632889094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <input v-model=\"message\" placeholder=\"edit me\">\n+        <input v-model=\"message\" placeholder=\"\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n"
+                },
+                {
+                    "date": 1629632966978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <input v-model=\"message\" placeholder=\"\">\n+        <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n         <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n@@ -19,8 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n+            \n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629632972491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-            \n+        me\n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629632978297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        me\n+        message\n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629632985542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message\n+        message: ()\n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629632991777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: ()\n+        message: （\n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629632998079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: （\n+        message:\n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629633003404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message:\n+        message: \n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629633011200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: \n+        message: []\n         check: []\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629633016957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: []\n-        check: []\n+        message: [],\n+        check: [],\n         };\n     },\n     methods:{\n         addItem:function(){\n"
+                },
+                {
+                    "date": 1629633035406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: [],\n+        message: 89,\n         check: [],\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629633041944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: 89,\n+        message: {},\n         check: [],\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629633053507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n export default {\n     el:'#app',\n         data:function() {\n         return {\n-        message: {},\n+        message: [],\n         check: [],\n         };\n     },\n     methods:{\n"
+                },
+                {
+                    "date": 1629633060275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n     <div>\n+        \n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633065994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        \n+        <\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633073475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <\n+        <P></P>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633078965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <P></P>\n+        <P>にゅう</P>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633086589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <P>にゅう</P>\n+        <p>入力</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633098579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div>\n-        <p>入力</p>\n+        <p>入力した</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633313208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n <template>\n-    <div>\n-        <p>入力した</p>\n+    <div>    <button @click=\"increment\">ボタン</button>\n+    <p>いいね({{ number }})</p>\n+    \n+        <p>入力↓</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n         <label for=\"1\">1</label>\n"
+                },
+                {
+                    "date": 1629633319227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n-    <div>    <button @click=\"increment\">ボタン</button>\n+    <div>    \n+        <button @click=\"increment\">ボタン</button>\n     <p>いいね({{ number }})</p>\n-    \n         <p>入力↓</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n"
+                },
+                {
+                    "date": 1629633378305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div>    \n         <button @click=\"increment\">ボタン</button>\n-    <p>いいね({{ number }})</p>\n+        <p>いいね({{ number }})</p>\n         <p>入力↓</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n         <p>コメント: {{ message }}</p>\n         <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n@@ -26,13 +26,13 @@\n         message: [],\n         check: [],\n         };\n     },\n-    methods:{\n-        addItem:function(){\n-        alert();\n-        },\n-    }\n+  methods: {\n+    increment(){\n+      this.number += 1;\n+    },\n+  }\n } \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633387144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,13 +26,13 @@\n         message: [],\n         check: [],\n         };\n     },\n-  methods: {\n+    methods: {\n     increment(){\n-      this.number += 1;\n+    this.number += 1;\n     },\n-  }\n+    }\n } \n \n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633418456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,10 @@\n         data:function() {\n         return {\n         message: [],\n         check: [],\n+\n+      number: 0\n         };\n     },\n     methods: {\n     increment(){\n"
+                },
+                {
+                    "date": 1629633426483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,9 @@\n         data:function() {\n         return {\n         message: [],\n         check: [],\n-\n-      number: 0\n+        number: 0,\n         };\n     },\n     methods: {\n     increment(){\n"
+                },
+                {
+                    "date": 1629633498187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n         <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n+        \n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629633503498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n-        \n+        <p>tesuto</p>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629633509319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n-        <p>tesuto</p>\n+        <p>テスト終わり</p>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629633522474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n-        <p>テスト終わり</p>\n+        <p >テスト終わり</p>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629633529798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n-        <p >テスト終わり</p>\n+        <p class=\"\">テスト終わり</p>\n     </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629633537390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n         <label for=\"3\">3</label>\n         <br>\n         <span>チェック {{ check }}</span>\n-        <p class=\"\">テスト終わり</p>\n+        <p class=\"end\">テスト終わり</p>\n     </div>\n </template>\n \n <script>\n@@ -35,6 +35,5 @@\n     },\n     }\n } \n \n-\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633543924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,9 @@\n     this.number += 1;\n     },\n     }\n } \n+</script>\n \n\\ No newline at end of file\n-</script>\n+<style scoped>\n+\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633551541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,7 +36,7 @@\n     }\n } \n </script>\n \n-<style scoped>\n-\n+<style>\n+    \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633562954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,8 @@\n } \n </script>\n \n <style>\n-    \n+    .end{\n+        ba\n+    }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633572520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,7 +38,8 @@\n </script>\n \n <style>\n     .end{\n-        ba\n+        background-color: blue;\n+        \n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633579783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,7 +39,7 @@\n \n <style>\n     .end{\n         background-color: blue;\n-        \n+        margin-: ;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633585871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,7 +39,7 @@\n \n <style>\n     .end{\n         background-color: blue;\n-        margin-: ;\n+        margin-bottom: 100px;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633603730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,8 @@\n </script>\n \n <style>\n     .end{\n-        background-color: blue;\n+        background-color: rgb(113, 113, 221);\n         margin-bottom: 100px;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633616438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,8 @@\n </script>\n \n <style>\n     .end{\n-        background-color: rgb(113, 113, 221);\n+        background-color: rgb(175, 175, 241);\n         margin-bottom: 100px;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629633635455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n     <div> \n+        \n         <button @click=\"increment\">ボタン</button>\n         <p>いいね({{ number }})</p>\n         <p>入力↓</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n"
+                },
+                {
+                    "date": 1629633654175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <div> \n-        <div class=\"bg-colo\"></div>\n+        <div class=\"bg-color\"></div>\n         <button @click=\"increment\">ボタン</button>\n         <p>いいね({{ number }})</p>\n         <p>入力↓</p>\n         <input v-model=\"message\" placeholder=\"入力してください\">\n"
+                }
+            ],
+            "date": 1629631855660,
+            "name": "Commit-0",
+            "content": "<template>\n    <div>\n        <input type=\"text\" v-model=\"newItem\">\n        <button @click=\"addItem\">表示</button>\n        <pre>{{ $data }}</pre>\n    </div>\n</template>\n\n<script>\n\n\nexport default {\n    el:'#app',\n        data:function() {\n        return {\n        newItem:\"\"\n        };\n    },\n    methods:{\n        addItem:function(e){\n        alert();\n        },\n    }\n} \n\n\n</script>"
+        }
+    ]
+}

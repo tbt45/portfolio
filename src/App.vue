@@ -1,20 +1,29 @@
 <template>
   <div>
   <p class="title">vue.js試験運用</p>
-  <test></test>
-  <b></b>
+  <Test-second></Test-second>
+  <Test @add-todo="addTodo"></Test>
   </div>
 </template>
 
 <script>
-import Todo from "./components/Todo.vue";
 import Test from "./components/Test.vue";
+import TestSecond from './components/TestSecond.vue';
 
 export default {
   components: {
-    Todo,
     Test,
+    TestSecond,
   },
+  methods:{
+    addTodo(Test) {
+      const newTodo = Test && Test.trim();
+      if (!newTodo){
+        return;
+      }
+      this.todo.title = newTodo;
+    }
+  }
 }
 </script>
 

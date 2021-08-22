@@ -1,21 +1,26 @@
 <template>
-  <div id="app">
-    <button @click="increment">ボタン</button>
-    <p>いいね({{ number }})</p>
+  <div>
+    <input
+      v-model="newTodo" 
+      @keydown.enter="addTodo">
+    <button @click="OnClick">入力</button>
+    <p>[{{ newTodo }}]</p>
   </div>
 </template>
 
 <script>
 export default {
+  // el: '#app',
   data: function(){
     return {
-      number: 0
-    }
+      newTodo: '',
+    };
   },
   methods: {
-    increment(){
-      this.number += 1;
-    },
+    addTodo(){
+      this.$emit('add-todo',this.newTodo);
+      this.newTodo = '';
+    }
   }
 }
 </script>

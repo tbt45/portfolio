@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 286,
+            "activePatchIndex": 347,
             "patches": [
                 {
                     "date": 1629466595026,
@@ -1152,6 +1152,250 @@
                 {
                     "date": 1629630842480,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   </div>\n </template>\n \n <script>\n-import Todo from \"./components/todo.vue\";\n-import Test from \"./components/Test.vue\";\n+import Todo from \"./components/Todo.vue\";\n+import Test from \"./Test.vue\";\n \n export default {\n   components: {\n     Todo,\n"
+                },
+                {
+                    "date": 1629631206486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   </div>\n </template>\n \n <script>\n-import Todo from \"./components/Todo.vue\";\n-import Test from \"./Test.vue\";\n+import Todo from \"./components/Test2.vue\";\n+import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n     Todo,\n"
+                },
+                {
+                    "date": 1629631213191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n-    Todo,\n+    ,\n     Test,\n   },\n }\n </script>\n"
+                },
+                {
+                    "date": 1629631220491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n-    ,\n     Test,\n+    Test,\n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629631230842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n+    TestSecond,\n     Test,\n-    Test,\n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629631237244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </div>\n </template>\n \n <script>\n-import Todo from \"./components/Test2.vue\";\n+import Todo from \"./components/Test.vue\";\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n"
+                },
+                {
+                    "date": 1629631243064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </div>\n </template>\n \n <script>\n-import Todo from \"./components/Test.vue\";\n+import Todo from \"./components/TestSecond.vue\";\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n"
+                },
+                {
+                    "date": 1629631248190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </div>\n </template>\n \n <script>\n-import Todo from \"./components/TestSecond.vue\";\n+import Test from \"./components/TestSecond.vue\";\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n"
+                },
+                {
+                    "date": 1629631403554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,14 +6,14 @@\n   </div>\n </template>\n \n <script>\n-import Test from \"./components/TestSecond.vue\";\n+import TestSecond from \"./components/TestSecond.vue\";\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n-    TestSecond,\n+    \n     Test,\n   },\n }\n </script>\n"
+                },
+                {
+                    "date": 1629631408750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n-    \n     Test,\n+    TestSecond,\n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629631609456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,8 @@\n \n export default {\n   components: {\n     Test,\n-    TestSecond,\n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629631635702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n   </div>\n </template>\n \n <script>\n-import TestSecond from \"./components/TestSecond.vue\";\n import Test from \"./components/Test.vue\";\n \n export default {\n   components: {\n"
+                },
+                {
+                    "date": 1629631648633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n-  <test></test>\n+  <Te></Te>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631673019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,14 @@\n </template>\n \n <script>\n import Test from \"./components/Test.vue\";\n+import TestSecond from './components/TestSecond.vue';\n \n export default {\n   components: {\n     Test,\n+    TestSecond,\n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629631678842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n-  <Te></Te>\n+  <Test></Test>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631690296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n-  <Test></Test>\n+  <est></est>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631696757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n-  <est></est>\n+  <Test></Test>\n+  \n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631703543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test></Test>\n-  \n+  <Test-second\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631956901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test></Test>\n-  <Test-second\n+  <!-- <Test-second></Test-second> -->\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631972309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n+  <Test></Test>\n   <p class=\"title\">vue.js試験運用</p>\n-  <Test></Test>\n-  <!-- <Test-second></Test-second> -->\n+  <Test-second></Test-second>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629631978958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n-  <Test></Test>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n+  <Test></Test>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629632046667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n+  <Test></Test>\n   <Test-second></Test-second>\n-  <Test></Test>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629633468858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n+  <Test-second></Test-second>\n   <Test></Test>\n-  <Test-second></Test-second>\n   <b></b>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1629641963623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n   <Test></Test>\n-  <b></b>\n+  とど\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629641977421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n   <Test></Test>\n-  とど\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629641989898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test></Test>\n+  <Test ></Test>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642002688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test ></Test>\n+  <Test @></Test>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642008920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test @></Test>\n+  <Test @add-todo></Test>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642015291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test @add-todo></Test>\n+  <Test @add-todo=\"\"></Test>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642020570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test @add-todo=\"\"></Test>\n+  <Test @add-todo=\"addTodo\"></Test>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642060909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test @add-todo=\"addTodo\"></Test>\n+  <Test- @add-todo=\"addTodo\"></Test->\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642069368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div>\n   <p class=\"title\">vue.js試験運用</p>\n   <Test-second></Test-second>\n-  <Test- @add-todo=\"addTodo\"></Test->\n+  <Test @add-todo=\"addTodo\"></Test>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1629642107852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n   components: {\n     Test,\n     TestSecond,\n   },\n+  \n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629642114716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   components: {\n     Test,\n     TestSecond,\n   },\n-  \n+  methods\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629642123331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n   components: {\n     Test,\n     TestSecond,\n   },\n-  methods\n+  methods:{\n+    \n+  }\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1629642128813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    \n+    add\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629642138098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    add\n+    addTodo{}\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629642143378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo{}\n+    addTodo(){}\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629642149782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo(){}\n+    addTodo(todoTitle){}\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629642177436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo(todoTitle){}\n+    addTodo(test) {}\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629642215202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo(test) {}\n+    addTodo(test) {\n+      \n+    }\n   }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1629642220497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      \n+      const\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642226594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const\n+      const n\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642234078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const n\n+      const newTodo\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642245073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const newTodo\n+      const newTodo = test\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642251329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const newTodo = test\n+      const newTodo = test &&\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642257531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const newTodo = test &&\n+      const newTodo = test && test\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642263147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const newTodo = test && test\n+      const newTodo = test && test.trim\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642270368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(test) {\n-      const newTodo = test && test.trim\n+      const newTodo = test && test.trim();\n+      if\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642276011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   },\n   methods:{\n     addTodo(test) {\n       const newTodo = test && test.trim();\n-      if\n+      if (!)\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642281740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   },\n   methods:{\n     addTodo(test) {\n       const newTodo = test && test.trim();\n-      if (!)\n+      if (!newTodo)\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642289447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo(test) {\n+    addTodo() {\n       const newTodo = test && test.trim();\n       if (!newTodo)\n     }\n   }\n"
+                },
+                {
+                    "date": 1629642296092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo() {\n+    addTodo(todoTitle) {\n       const newTodo = test && test.trim();\n       if (!newTodo)\n     }\n   }\n"
+                },
+                {
+                    "date": 1629642304810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n   },\n   methods:{\n     addTodo(todoTitle) {\n       const newTodo = test && test.trim();\n-      if (!newTodo)\n+      if (!newTodo){\n+        \n+      }\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642311801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   methods:{\n     addTodo(todoTitle) {\n       const newTodo = test && test.trim();\n       if (!newTodo){\n-        \n+        return\n       }\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1629642319048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,11 @@\n   methods:{\n     addTodo(todoTitle) {\n       const newTodo = test && test.trim();\n       if (!newTodo){\n-        return\n+        return;\n       }\n+      \n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642326704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       const newTodo = test && test.trim();\n       if (!newTodo){\n         return;\n       }\n-      \n+      this.\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642334195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       const newTodo = test && test.trim();\n       if (!newTodo){\n         return;\n       }\n-      this.\n+      this.todo.title\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642340705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       const newTodo = test && test.trim();\n       if (!newTodo){\n         return;\n       }\n-      this.todo.title\n+      this.todo.title = new\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642345867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       const newTodo = test && test.trim();\n       if (!newTodo){\n         return;\n       }\n-      this.todo.title = new\n+      this.todo.title = newTodo;\n     }\n   }\n }\n </script>\n"
+                },
+                {
+                    "date": 1629642740776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     TestSecond,\n   },\n   methods:{\n     addTodo(todoTitle) {\n-      const newTodo = test && test.trim();\n+      const newTodo = est && test.trim();\n       if (!newTodo){\n         return;\n       }\n       this.todo.title = newTodo;\n"
+                },
+                {
+                    "date": 1629642759458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     Test,\n     TestSecond,\n   },\n   methods:{\n-    addTodo(todoTitle) {\n-      const newTodo = est && test.trim();\n+    addTodo(Test) {\n+      const newTodo = Test && Test.trim();\n       if (!newTodo){\n         return;\n       }\n       this.todo.title = newTodo;\n"
                 }
             ],
             "date": 1629466595026,

@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue';
 import Test from './components/Test.vue';
-import Todo from './components/Todo.vue';
+import TestSecond from './components/TestSecond.vue';
 
 Vue.config.productionTip = false;
-Vue.component("test",Test);
-Vue.component("todo",Todo);
+Vue.component("Test",Test);
+Vue.component("TestSecond",TestSecond);
 // testをグローバル登録
 
 new Vue({
