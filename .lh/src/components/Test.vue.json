@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 115,
+            "activePatchIndex": 119,
             "patches": [
                 {
                     "date": 1629633293022,
@@ -468,6 +468,22 @@
                 {
                     "date": 1629643145909,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,18 +3,17 @@\n     <input\n       v-model=\"newTodo\" \n       @keydown.enter=\"addTodo\">\n     <button @click=\"OnClick\">入力</button>\n-    <p>[{{ new }}]</p>\n+    <p>[{{ newTodo }}]</p>\n   </div>\n </template>\n \n <script>\n export default {\n   // el: '#app',\n   data: function(){\n     return {\n-      textInput: '',\n       newTodo: '',\n     };\n   },\n   methods: {\n"
+                },
+                {
+                    "date": 1629720552210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,32 +0,0 @@\n-<template>\n-  <div>\n-    <input\n-      v-model=\"newTodo\" \n-      @keydown.enter=\"addTodo\">\n-    <button @click=\"OnClick\">入力</button>\n-    <p>[{{ newTodo }}]</p>\n-  </div>\n-</template>\n-\n-<script>\n-export default {\n-  // el: '#app',\n-  data: function(){\n-    return {\n-      newTodo: '',\n-    };\n-  },\n-  methods: {\n-    addTodo(){\n-      this.$emit('add-todo',this.newTodo);\n-      this.newTodo = '';\n-    }\n-  }\n-}\n-</script>\n-\n-<style>\n-#app{\n-  color: red;\n-}\n-</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629720596868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+<div>\n+    <label for=\"title\">タイトル：</label>\n+    <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n+  </div>\n+  <div>\n+    <label for=\"body\">内容：</label>\n+    <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n+  </div>\n+  <div>\n+    <input type=\"submit\" value=\"追加\" @click=\"addList\">\n+  </div>\n+    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n+      <li>id: {{i}}, title: {{ list.title }}</li>\n+    </ul>\n+    <pre>\n+      {{$data}}\n+    </pre>\n+  </div>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629720615663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,45 @@\n-<div>\n-    <label for=\"title\">タイトル：</label>\n-    <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n-  </div>\n-  <div>\n-    <label for=\"body\">内容：</label>\n-    <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n-  </div>\n-  <div>\n-    <input type=\"submit\" value=\"追加\" @click=\"addList\">\n-  </div>\n+<template>\n+  <div id=\"app\">\n+    <h1>MyTodoApp</h1>\n+    <div>\n+      <label for=\"title\">タイトル：</label>\n+      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n+    </div>\n\\ No newline at end of file\n+    <div>\n+      <label for=\"body\">内容：</label>\n+      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n+    </div>\n+    <div>\n+      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n+    </div>\n     <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n       <li>id: {{i}}, title: {{ list.title }}</li>\n     </ul>\n     <pre>\n       {{$data}}\n     </pre>\n-  </div>\n+  </div>\n+</template>\n+\n+<script>\n+\n+export default {\n+  data: () => ({\n+    lists: [\n+      {title: 'mytodo', body: 'contentcontent'},\n+      {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n+    ],\n+    title: '',\n+    body: ''\n+  }),\n+  methods: {\n+    // Todoの追加\n+    addList: function(){\n+\n+      this.lists.push({title: this.title, body: this.body})\n+      this.title = ''\n+      this.body = ''\n+    }\n+  }\n+};\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1629720827151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <div>\n       <input type=\"submit\" value=\"追加\" @click=\"addList\">\n     </div>\n     <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n-      <li>id: {{i}}, title: {{ list.title }}</li>\n+      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n     </ul>\n     <pre>\n       {{$data}}\n     </pre>\n@@ -32,14 +32,19 @@\n     title: '',\n     body: ''\n   }),\n   methods: {\n-    // Todoの追加\n+    // リストの追加\n     addList: function(){\n+      if(this.title === '' || this.body === '') return\n \n       this.lists.push({title: this.title, body: this.body})\n       this.title = ''\n       this.body = ''\n+    },\n+    // リストの削除\n+    deleteList: function(i){\n+      this.lists.splice(i,1)\n     }\n   }\n };\n </script>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1629633293022,
