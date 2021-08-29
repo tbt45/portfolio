@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 18,
             "patches": [
                 {
                     "date": 1630234705214,
@@ -76,6 +76,10 @@
                 {
                     "date": 1630234842478,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    di\n+    display: block;\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630244774574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n   <div class=\"main\">\n+    <div class=\"home\">ホーム</div>\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n-    <div class=\"home\">ホーム</div>\n   </div>\n </template>\n \n <script>\n@@ -25,6 +25,7 @@\n \n <style>\n   .home{\n     display: block;\n+\n   }\n </style>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1630234705214,

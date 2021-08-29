@@ -26,11 +26,12 @@
 
 <style>
   .link{
-    margin: 10px;
-    color: #000;
+    /* margin: 10px;
+    color: #000; */
+    opacity: 0;
   }
-  .link2{
+  /* .link2{
     font-size: 25px;
     color: crimson;
-  }
+  } */
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div class="main">
+    <div class="home">ホーム</div>
     <button @click="Test">TEST</button>
     <button @click="Todo">TODO</button>    
     <button @click="Reversi">REVERSI</button>  
-    <div class="home">ホーム</div>
   </div>
 </template>
 
@@ -26,6 +26,6 @@ export default {
 <style>
   .home{
     display: block;
-    
+
   }
 </style>
