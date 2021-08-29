@@ -1,0 +1,110 @@
+{
+    "sourceFile": "src/components/views/Todo.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 23,
+            "patches": [
+                {
+                    "date": 1630229835527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630229842176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,1 @@\n-    <div id=\"app\">\n-    <h1>Todo</h1>\n-    <div>\n-      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n-    </div>\n-    <div>\n-\n-      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n-    </div>\n-    <div>\n-      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n-    </div>\n-    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n-      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n-    </ul>\n-    <pre>\n-      {{$data}}\n-    </pre>\n\\ No newline at end of file\n+co\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229869414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,20 @@\n-co\n\\ No newline at end of file\n+<template>\n+        <div id=\"app\">\n+    <h1>Todo</h1>\n+    <div>\n+      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n+    </div>\n+    <div>\n+\n+      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n+    </div>\n+    <div>\n+      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n+    </div>\n+    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n+      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n+    </ul>\n+    <pre>\n+      {{$data}}\n+    </pre>\n+</template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229885307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,6 @@\n     </ul>\n     <pre>\n       {{$data}}\n     </pre>\n-</template>\n\\ No newline at end of file\n+</template>\n+\n"
+                },
+                {
+                    "date": 1630229891189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,4 +18,9 @@\n       {{$data}}\n     </pre>\n </template>\n \n+<script>\n+export default {\n+    \n+}\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229913103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,28 @@\n </template>\n \n <script>\n export default {\n-    \n+     data: () => ({\n+    lists: [\n+      {title: 'mytodo', body: 'contentcontent'},\n+      {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n+    ],\n+    title: '',\n+    body: ''\n+  }),\n+  methods: {\n+    // リストの追加\n+    addList: function(){\n+      if(this.title === '' || this.body === '') return\n+      this.lists.push({title: this.title, body: this.body})\n+      this.title = ''\n+      this.body = ''\n+    },\n+    // リストの削除\n+    deleteList: function(i){\n+      this.lists.splice(i,1)\n+    }\n+  }\n+};\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229925992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,6 @@\n     deleteList: function(i){\n       this.lists.splice(i,1)\n     }\n   }\n-};\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229933890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     addList: function(){\n       if(this.title === '' || this.body === '') return\n       this.lists.push({title: this.title, body: this.body})\n       this.title = ''\n-      this.body = ''\n+        this.body = ''\n     },\n     // リストの削除\n     deleteList: function(i){\n       this.lists.splice(i,1)\n"
+                },
+                {
+                    "date": 1630229939199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,14 +28,14 @@\n     ],\n     title: '',\n     body: ''\n   }),\n-  methods: {\n+    methods: {\n     // リストの追加\n     addList: function(){\n-      if(this.title === '' || this.body === '') return\n-      this.lists.push({title: this.title, body: this.body})\n-      this.title = ''\n+        if(this.title === '' || this.body === '') return\n+        this.lists.push({title: this.title, body: this.body})\n+        this.title = ''\n         this.body = ''\n     },\n     // リストの削除\n     deleteList: function(i){\n"
+                },
+                {
+                    "date": 1630229946743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,16 +20,16 @@\n </template>\n \n <script>\n export default {\n-     data: () => ({\n+       data: () => ({\n     lists: [\n-      {title: 'mytodo', body: 'contentcontent'},\n-      {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n+        {title: 'mytodo', body: 'contentcontent'},\n+        {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n     ],\n     title: '',\n     body: ''\n-  }),\n+    }),\n     methods: {\n     // リストの追加\n     addList: function(){\n         if(this.title === '' || this.body === '') return\n"
+                },
+                {
+                    "date": 1630229952817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n </template>\n \n <script>\n export default {\n-       data: () => ({\n+    data: () => ({\n     lists: [\n         {title: 'mytodo', body: 'contentcontent'},\n         {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n     ],\n"
+                },
+                {
+                    "date": 1630229959494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,11 @@\n \n <script>\n export default {\n     data: () => ({\n-    lists: [\n-        {title: 'mytodo', body: 'contentcontent'},\n-        {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n+        lists: [\n+            {title: 'mytodo', body: 'contentcontent'},\n+            {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n     ],\n     title: '',\n     body: ''\n     }),\n"
+                },
+                {
+                    "date": 1630229967616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,12 @@\n     </pre>\n </template>\n \n <script>\n-export default {\n-    data: () => ({\n-        lists: [\n-            {title: 'mytodo', body: 'contentcontent'},\n+    export default {\n+        data: () => ({\n+            lists: [\n+                {title: 'mytodo', body: 'contentcontent'},\n             {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n     ],\n     title: '',\n     body: ''\n"
+                },
+                {
+                    "date": 1630229977354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     export default {\n         data: () => ({\n             lists: [\n                 {title: 'mytodo', body: 'contentcontent'},\n-            {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n+                {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n     ],\n     title: '',\n     body: ''\n     }),\n@@ -38,9 +38,10 @@\n         this.body = ''\n     },\n     // リストの削除\n     deleteList: function(i){\n-      this.lists.splice(i,1)\n+        \n+    this.lists.splice(i,1)\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229983725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,9 @@\n         this.body = ''\n     },\n     // リストの削除\n     deleteList: function(i){\n-        \n-    this.lists.splice(i,1)\n+        this.lists.splice(i,1)\n     }\n-  }\n+    }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630229992524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-        <div id=\"app\">\n+              <div id=\"app\">\n     <h1>Todo</h1>\n     <div>\n       <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n"
+                },
+                {
+                    "date": 1630229998146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-              <div id=\"app\">\n+    <div id=\"app\">\n     <h1>Todo</h1>\n     <div>\n       <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n"
+                },
+                {
+                    "date": 1630230005775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div id=\"app\">\n-    <h1>Todo</h1>\n+        <h1>Todo</h1>\n     <div>\n-      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n+        <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n \n       <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n"
+                },
+                {
+                    "date": 1630230011784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,15 @@\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n \n-      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n+        <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n     </div>\n     <div>\n-      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n+        <input type=\"submit\" value=\"追加\" @click=\"addList\">\n     </div>\n     <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n-      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n+        <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n     </ul>\n     <pre>\n       {{$data}}\n     </pre>\n"
+                },
+                {
+                    "date": 1630230040193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,11 @@\n     <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n         <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n     </ul>\n     <pre>\n-      {{$data}}\n+        {{$data}}\n     </pre>\n+      </div>\n </template>\n \n <script>\n     export default {\n"
+                },
+                {
+                    "date": 1630230449575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,17 +16,17 @@\n     </ul>\n     <pre>\n         {{$data}}\n     </pre>\n-      </div>\n+    </div>\n </template>\n \n <script>\n     export default {\n         data: () => ({\n             lists: [\n                 {title: 'mytodo', body: 'contentcontent'},\n-                {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n+                {title: 'hogehoge', body: ''}\n     ],\n     title: '',\n     body: ''\n     }),\n"
+                },
+                {
+                    "date": 1630230466118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n <script>\n     export default {\n         data: () => ({\n             lists: [\n-                {title: 'mytodo', body: 'contentcontent'},\n+                {title: 'mytodo', body: ''},\n                 {title: 'hogehoge', body: ''}\n     ],\n     title: '',\n     body: ''\n"
+                },
+                {
+                    "date": 1630230473543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n <script>\n     export default {\n         data: () => ({\n             lists: [\n-                {title: 'mytodo', body: ''},\n-                {title: 'hogehoge', body: ''}\n+                {title: '', body: ''},\n+                {title: '', body: ''}\n     ],\n     title: '',\n     body: ''\n     }),\n"
+                },
+                {
+                    "date": 1630230543580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n <script>\n     export default {\n         data: () => ({\n             lists: [\n-                {title: '', body: ''},\n-                {title: '', body: ''}\n+                // {title: '', body: ''},\n+                // {title: '', body: ''}\n     ],\n     title: '',\n     body: ''\n     }),\n"
+                }
+            ],
+            "date": 1630229835527,
+            "name": "Commit-0",
+            "content": "    <div id=\"app\">\n    <h1>Todo</h1>\n    <div>\n      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n    </div>\n    <div>\n\n      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n    </div>\n    <div>\n      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n    </div>\n    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n    </ul>\n    <pre>\n      {{$data}}\n    </pre>"
+        }
+    ]
+}

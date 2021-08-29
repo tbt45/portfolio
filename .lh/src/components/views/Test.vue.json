@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/views/Test.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1630231329726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630231335177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-\n+    表紙\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630231344490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,27 +7,7 @@\n <script>\n \n export default {\n   data: () => ({\n-    lists: [\n-      {title: 'mytodo', body: 'contentcontent'},\n-      {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n-    ],\n-    title: '',\n-    body: ''\n-  }),\n-  methods: {\n-    // リストの追加\n-    addList: function(){\n-      if(this.title === '' || this.body === '') return\n \n-      this.lists.push({title: this.title, body: this.body})\n-      this.title = ''\n-      this.body = ''\n-    },\n-    // リストの削除\n-    deleteList: function(i){\n-      this.lists.splice(i,1)\n-    }\n-  }\n };\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630231351024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n \n export default {\n   data: () => ({\n \n-};\n+}\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630231753452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,11 @@\n <template>\n   <div id=\"app\">\n-    表紙\n+    \n   </div>\n </template>\n \n <script>\n \n export default {\n-  data: () => ({\n-\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630231758963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    \n+    ホーム\n   </div>\n </template>\n \n <script>\n"
+                }
+            ],
+            "date": 1630231329725,
+            "name": "Commit-0",
+            "content": "<template>\n  <div id=\"app\">\n\n  </div>\n</template>\n\n<script>\n\nexport default {\n  data: () => ({\n    lists: [\n      {title: 'mytodo', body: 'contentcontent'},\n      {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n    ],\n    title: '',\n    body: ''\n  }),\n  methods: {\n    // リストの追加\n    addList: function(){\n      if(this.title === '' || this.body === '') return\n\n      this.lists.push({title: this.title, body: this.body})\n      this.title = ''\n      this.body = ''\n    },\n    // リストの削除\n    deleteList: function(i){\n      this.lists.splice(i,1)\n    }\n  }\n};\n</script>"
+        }
+    ]
+}

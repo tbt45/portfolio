@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 383,
+            "activePatchIndex": 407,
             "patches": [
                 {
                     "date": 1629466595026,
@@ -1540,6 +1540,102 @@
                 {
                     "date": 1629814862822,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     <div>\n       <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n+\n       <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n     </div>\n     <div>\n       <input type=\"submit\" value=\"追加\" @click=\"addList\">\n@@ -40,9 +41,9 @@\n   methods: {\n     // リストの追加\n     addList: function(){\n       if(this.title === '' || this.body === '') return\n-      this.lists.push({title: this.title, this.body})\n+      this.lists.push({title: this.title, body: this.body})\n       this.title = ''\n       this.body = ''\n     },\n     // リストの削除\n"
+                },
+                {
+                    "date": 1630228685547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </div>\n     <div>\n       <input type=\"submit\" value=\"追加\" @click=\"addList\">\n     </div>\n-    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n+    <ul v-for=\"(list, ni) in lists\" v-bind:key=\"i\">\n       <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n     </ul>\n     <pre>\n       {{$data}}\n"
+                },
+                {
+                    "date": 1630229831047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,26 +3,9 @@\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n   </div> -->\n-    <div id=\"app\">\n-    <h1>Todo</h1>\n-    <div>\n-      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n-    </div>\n-    <div>\n \n-      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n-    </div>\n-    <div>\n-      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n-    </div>\n-    <ul v-for=\"(list, ni) in lists\" v-bind:key=\"i\">\n-      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n-    </ul>\n-    <pre>\n-      {{$data}}\n-    </pre>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630229858439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,26 @@\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n   </div> -->\n+    <div id=\"app\">\n+    <h1>Todo</h1>\n+    <div>\n+      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n+    </div>\n+    <div>\n \n+      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n+    </div>\n+    <div>\n+      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n+    </div>\n+    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n+      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n+    </ul>\n+    <pre>\n+      {{$data}}\n+    </pre>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630229863942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,26 +3,9 @@\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n   </div> -->\n-    <div id=\"app\">\n-    <h1>Todo</h1>\n-    <div>\n-      <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n-    </div>\n-    <div>\n \n-      <textarea v-model=\"body\" placeholder=\"内容\"></textarea>\n-    </div>\n-    <div>\n-      <input type=\"submit\" value=\"追加\" @click=\"addList\">\n-    </div>\n-    <ul v-for=\"(list, i) in lists\" v-bind:key=\"i\">\n-      <li>id: {{i}}, title: {{ list.title }} <button @click=\"deleteList(i)\">削除</button></li>\n-    </ul>\n-    <pre>\n-      {{$data}}\n-    </pre>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630229903691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,30 +12,9 @@\n // import Test from \"./components/Test.vue\";\n // import TestSecond from './components/TestSecond.vue';\n \n export default {\n-    data: () => ({\n-    lists: [\n-      {title: 'mytodo', body: 'contentcontent'},\n-      {title: 'hogehoge', body: 'yuuyuuyuyuyu'}\n-    ],\n-    title: '',\n-    body: ''\n-  }),\n-  methods: {\n-    // リストの追加\n-    addList: function(){\n-      if(this.title === '' || this.body === '') return\n-      this.lists.push({title: this.title, body: this.body})\n-      this.title = ''\n-      this.body = ''\n-    },\n-    // リストの削除\n-    deleteList: function(i){\n-      this.lists.splice(i,1)\n-    }\n-  }\n-};\n+   \n //   data (){\n //   },\n //   components: {\n //     Test,\n"
+                },
+                {
+                    "date": 1630230029441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <Test-second></Test-second>\n     <Test></Test>\n   </div> -->\n \n-  </div>\n+\n </template>\n \n <script>\n // import Test from \"./components/Test.vue\";\n"
+                },
+                {
+                    "date": 1630230049647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n   </div> -->\n+todo\n \n-\n </template>\n \n <script>\n // import Test from \"./components/Test.vue\";\n"
+                },
+                {
+                    "date": 1630230055159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,8 @@\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n   </div> -->\n-todo\n-\n </template>\n \n <script>\n // import Test from \"./components/Test.vue\";\n"
+                },
+                {
+                    "date": 1630230064232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n-  <!-- <div>\n+  <div>\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n-  </div> -->\n+  </div>\n </template>\n \n <script>\n // import Test from \"./components/Test.vue\";\n"
+                },
+                {
+                    "date": 1630230076807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,15 @@\n // import TestSecond from './components/TestSecond.vue';\n \n export default {\n    \n-//   data (){\n-//   },\n-//   components: {\n-//     Test,\n-//     TestSecond,\n-//   },\n-// }\n+  data (){\n+  },\n+  components: {\n+    Test,\n+    TestSecond,\n+  },\n+}\n </script>\n \n <style>\n   /* .title{\n"
+                },
+                {
+                    "date": 1630230086174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   </div>\n </template>\n \n <script>\n-// import Test from \"./components/Test.vue\";\n-// import TestSecond from './components/TestSecond.vue';\n+import Test from \"./components/Test.vue\";\n+import TestSecond from './components/TestSecond.vue';\n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230114546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n import Test from \"./components/Test.vue\";\n-import TestSecond from './components/TestSecond.vue';\n+import TestSecond from './components//TestSecond.vue';\n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230127155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n </template>\n \n <script>\n import Test from \"./components/Test.vue\";\n-import TestSecond from './components//TestSecond.vue';\n+import TestSecond from './components//views/TestSecond.vue';\n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230133260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   </div>\n </template>\n \n <script>\n-import Test from \"./components/Test.vue\";\n+import Test from \"./components/views/Test.vue\";\n import TestSecond from './components//views/TestSecond.vue';\n \n export default {\n    \n"
+                },
+                {
+                    "date": 1630230138738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \n <script>\n import Test from \"./components/views/Test.vue\";\n import TestSecond from './components//views/TestSecond.vue';\n+import\n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230147285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n <script>\n import Test from \"./components/views/Test.vue\";\n import TestSecond from './components//views/TestSecond.vue';\n-import\n+import Todo from \n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230153465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n <script>\n import Test from \"./components/views/Test.vue\";\n import TestSecond from './components//views/TestSecond.vue';\n-import Todo from \n+import Todo from './'\n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230160281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n <script>\n import Test from \"./components/views/Test.vue\";\n import TestSecond from './components//views/TestSecond.vue';\n-import Todo from './'\n+import Todo from './components/views/'\n \n export default {\n    \n   data (){\n"
+                },
+                {
+                    "date": 1630230174296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,17 +8,18 @@\n \n <script>\n import Test from \"./components/views/Test.vue\";\n import TestSecond from './components//views/TestSecond.vue';\n-import Todo from './components/views/'\n+import Todo from './components/views/Todo.vue'\n \n export default {\n    \n   data (){\n   },\n   components: {\n     Test,\n     TestSecond,\n+    \n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1630230225594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n   <div>\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n+    t\n   </div>\n </template>\n \n <script>\n@@ -17,9 +18,9 @@\n   },\n   components: {\n     Test,\n     TestSecond,\n-    \n+    Todo,\n   },\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1630230231822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n   <div>\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n-    t\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630230275207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n import TestSecond from './components//views/TestSecond.vue';\n import Todo from './components/views/Todo.vue'\n \n export default {\n-   \n   data (){\n   },\n   components: {\n     Test,\n"
+                },
+                {
+                    "date": 1630230282610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n   <div>\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n+    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630230290871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div>\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n-    <Todo\n+    <Todo></Todo>\n   </div>\n </template>\n \n <script>\n"
                 }
             ],
             "date": 1629466595026,
