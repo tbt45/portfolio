@@ -1,8 +1,10 @@
 <template>
   <div>
-    <router-link to="/" class="link" active-class="link2">空</router-link>
-    <router-link to="/testsecond" class="link" active-class="link2">試験運用</router-link>
-    <router-link to="/todo" class="link" active-class="link2">todo</router-link>
+    <router-link to="/" class="link" active-class="link2" exact>home</router-link>
+    <router-link to="/testsecond" class="link" active-class="link2" exact>test</router-link>
+    <router-link to="/todo" class="link" active-class="link2" exact>todo</router-link>
+    <router-link to="/Reversi" class="link" active-class="link2" exact>Reversi</router-link>    
+    <router-view></router-view>
   </div>
 </template>
 
@@ -24,10 +26,11 @@
 
 <style>
   .link{
-    margin: 100px;
+    margin: 10px;
     color: #000;
   }
   .link2{
-    font-size: 50px;
+    font-size: 25px;
+    color: crimson;
   }
 </style>

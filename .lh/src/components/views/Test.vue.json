@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 54,
             "patches": [
                 {
                     "date": 1630231329726,
@@ -28,6 +28,202 @@
                 {
                     "date": 1630231758963,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div id=\"app\">\n-    \n+    ホーム\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233102481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <template>\n   <div id=\"app\">\n     ホーム\n+    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233107895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    \n+    <button\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233113534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    <button\n+    <button @click=\"\"></button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233134894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    <button @click=\"\"></button>\n+    <button @click=\"pagr\"></button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233147442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    <button @click=\"pagr\"></button>\n+    <button @click=\"\"></button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233156329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    <button @click=\"\"></button>\n+    <button @click=\"toTs\"></button>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233164064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    <button @click=\"toTs\"></button>\n+    <button @click=\"Ts\"></button>\n+    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233178075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     ホーム\n     <button @click=\"Ts\"></button>\n-    \n+    <button @click=\"Ts\"></button>    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233185294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     ホーム\n     <button @click=\"Ts\"></button>\n-    <button @click=\"Ts\"></button>    \n+    <button @click=\"todo\"></button>    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233202900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n     ホーム\n-    <button @click=\"Ts\"></button>\n-    <button @click=\"todo\"></button>    \n+    <button @click=\"Ts\">試験運用</button>\n+    <button @click=\"Todo\"></button>    \n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233213882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n <template>\n   <div id=\"app\">\n     ホーム\n     <button @click=\"Ts\">試験運用</button>\n-    <button @click=\"Todo\"></button>    \n+    <button @click=\"Todo\">TODO</button>    \n   </div>\n </template>\n \n <script>\n \n export default {\n+  \n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233219912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,9 @@\n \n <script>\n \n export default {\n-  \n+  methods: {\n+    \n+  }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233231715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n <script>\n \n export default {\n   methods: {\n-    \n+    Ts\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233238433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n <script>\n \n export default {\n   methods: {\n-    Ts\n+    Ts() {\n+      \n+    }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233245903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n export default {\n   methods: {\n     Ts() {\n-      \n+      this.\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233253604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n export default {\n   methods: {\n     Ts() {\n-      this.\n+      this.$route\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233258708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n export default {\n   methods: {\n     Ts() {\n-      this.$route\n+      this.$router.\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233266748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n export default {\n   methods: {\n     Ts() {\n-      this.$router.\n+      this.$router.push();\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233286047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n export default {\n   methods: {\n     Ts() {\n-      this.$router.push();\n+      this.$router.push(\"\");\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233295135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n export default {\n   methods: {\n     Ts() {\n-      this.$router.push(\"\");\n+      this.$router.push(\"testsecond\");\n     }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233316493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,10 @@\n   methods: {\n     Ts() {\n       this.$router.push(\"testsecond\");\n     }\n+        Ts() {\n+      this.$router.push(\"testsecond\");\n+    }\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233322284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   methods: {\n     Ts() {\n       this.$router.push(\"testsecond\");\n     }\n-        Ts() {\n+    Ts() {\n       this.$router.push(\"testsecond\");\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1630233331029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   methods: {\n     Ts() {\n       this.$router.push(\"testsecond\");\n     }\n-    Ts() {\n+    Todo() {\n       this.$router.push(\"testsecond\");\n     }\n   }\n }\n"
+                },
+                {
+                    "date": 1630233336207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n export default {\n   methods: {\n     Ts() {\n       this.$router.push(\"testsecond\");\n-    }\n+    },\n     Todo() {\n       this.$router.push(\"testsecond\");\n-    }\n+    },\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233343797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     Ts() {\n       this.$router.push(\"testsecond\");\n     },\n     Todo() {\n-      this.$router.push(\"testsecond\");\n+      this.$router.push(\"todo\");\n     },\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233734227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div id=\"app\">\n-    ホーム\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n+    ホーム\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630233743753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div id=\"app\">\n+  <div>\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630233750173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div>\n+  <div class>\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630233756726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-  <div class>\n+  <div class=\"main\">\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630234489546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div class=\"main\">\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n+        <button @click=\"Todo\">TODO</button>  \n     ホーム\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630234497599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n-        <button @click=\"Todo\">TODO</button>  \n+    <button @click=\"Todo\">TODO</button>  \n     ホーム\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630234502758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n-    <button @click=\"Todo\">TODO</button>  \n+    <button @click=\"R\">TODO</button>  \n     ホーム\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630234510481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n-    <button @click=\"R\">TODO</button>  \n+    <button @click=\"Reversi\">Re</button>  \n     ホーム\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630234517717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <button @click=\"Ts\">試験運用</button>\n     <button @click=\"Todo\">TODO</button>    \n-    <button @click=\"Reversi\">Re</button>  \n+    <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630234523522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <button @click=\"Ts\">試験運用</button>\n+    <button @click=\"Ts\">Test</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630234544926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n <script>\n \n export default {\n   methods: {\n-    Ts() {\n+    Home() {\n       this.$router.push(\"testsecond\");\n     },\n     Todo() {\n       this.$router.push(\"todo\");\n"
+                },
+                {
+                    "date": 1630234551056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <button @click=\"Ts\">Test</button>\n+    <button @click=\"Home\">Test</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630234557663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <button @click=\"Home\">Test</button>\n+    <button @click=\"Home\">HOME</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630234575346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <button @click=\"Home\">HOME</button>\n+    <button @click=\"Home\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630234582792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <button @click=\"Home\">TEST</button>\n+    <button @click=\"Te\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n"
+                },
+                {
+                    "date": 1630234593698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <button @click=\"Te\">TEST</button>\n+    <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n     ホーム\n   </div>\n@@ -10,9 +10,9 @@\n <script>\n \n export default {\n   methods: {\n-    Home() {\n+    Test() {\n       this.$router.push(\"testsecond\");\n     },\n     Todo() {\n       this.$router.push(\"todo\");\n"
+                },
+                {
+                    "date": 1630234602031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n export default {\n   methods: {\n     Test() {\n-      this.$router.push(\"testsecond\");\n+      this.$router.push(\"test\");\n     },\n     Todo() {\n       this.$router.push(\"todo\");\n     },\n"
+                },
+                {
+                    "date": 1630234867825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,57 @@\n <template>\n-  <div class=\"main\">\n-    <button @click=\"Test\">TEST</button>\n-    <button @click=\"Todo\">TODO</button>    \n-    <button @click=\"Reversi\">REVERSI</button>  \n-    ホーム\n-  </div>\n+    <div> \n+        <div class=\"bg-color\">\n+            <button @click=\"Test\">ホーム</button>\n+            <button @click=\"increment\">ボタン</button>\n+            <p>いいね({{ number }})</p>\n+            <p>入力↓</p>\n+            <input v-model=\"message\" placeholder=\"入力してください\">\n+            <p>コメント: {{ message }}</p>\n+            <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n+            <label for=\"1\">1</label>\n+            <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n+            <label for=\"2\">2</label>\n+            <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n+            <label for=\"3\">3</label>\n+            <br>\n\\ No newline at end of file\n+            <span>チェック {{ check }}</span>\n+        </div>\n+        <p class=\"end\">テスト終わり</p>\n+    </div>\n </template>\n \n <script>\n \n+\n export default {\n-  methods: {\n-    Test() {\n-      this.$router.push(\"test\");\n+    el: '#app',\n+    data: function() {\n+        return {\n+        message: [],\n+        check: [],\n+        number: 0,\n+        }\n     },\n-    Todo() {\n-      this.$router.push(\"todo\");\n-    },\n-  }\n-}\n-</script>\n+    methods: {\n+        increment(){\n+        this.number += 1;\n+        },\n+        Test() {\n+            this.$router.push(\"/\");\n+        },\n+        Todo() {\n+            this.$router.push(\"todo\");\n+        },\n+    }\n+} \n+</script>\n+\n+<style>\n+    .bg-color{\n+        background-color: burlywood;\n+    }\n+    .end{\n+        background-color: rgb(175, 175, 241);\n+        margin-bottom: 100px;\n+    }\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234886474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n-            <button @click=\"Test\">ホーム</button>\n+            <button @click=\"Home\">ホーム</button>\n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n             <input v-model=\"message\" placeholder=\"入力してください\">\n@@ -38,11 +38,8 @@\n         },\n         Test() {\n             this.$router.push(\"/\");\n         },\n-        Todo() {\n-            this.$router.push(\"todo\");\n-        },\n     }\n } \n </script>\n \n"
+                },
+                {
+                    "date": 1630234893423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     methods: {\n         increment(){\n         this.number += 1;\n         },\n-        Test() {\n+        Home() {\n             this.$router.push(\"/\");\n         },\n     }\n } \n"
+                },
+                {
+                    "date": 1630235091056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n-            <button @click=\"Home\">ホーム</button>\n+\n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n             <input v-model=\"message\" placeholder=\"入力してください\">\n"
+                },
+                {
+                    "date": 1630235099215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-    <div> \n+    <div>             <button @click=\"Home\">ホーム</button>\n         <div class=\"bg-color\">\n \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n"
+                },
+                {
+                    "date": 1630235104973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n-    <div>             <button @click=\"Home\">ホーム</button>\n+    <div> \n+        <button @click=\"Home\">ホーム</button>\n         <div class=\"bg-color\">\n \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n"
+                },
+                {
+                    "date": 1630235149016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n <template>\n     <div> \n         <button @click=\"Home\">ホーム</button>\n         <div class=\"bg-color\">\n-\n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n             <input v-model=\"message\" placeholder=\"入力してください\">\n@@ -24,9 +23,8 @@\n <script>\n \n \n export default {\n-    el: '#app',\n     data: function() {\n         return {\n         message: [],\n         check: [],\n"
                 }
             ],
             "date": 1630231329725,

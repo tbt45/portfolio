@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 407,
+            "activePatchIndex": 408,
             "patches": [
                 {
                     "date": 1629466595026,
@@ -1636,6 +1636,10 @@
                 {
                     "date": 1630230290871,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div>\n     <p class=\"title\">vue.js試験運用</p>\n     <Test-second></Test-second>\n     <Test></Test>\n-    <Todo\n+    <Todo></Todo>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630232871549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div>\n     <router-link to=\"/\" class=\"link\" active-class=\"link2\" exact>空</router-link>\n-    <router-link to=\"/com/testsecond\" class=\"link\" active-class=\"link2\" exact>試験運用</router-link>\n+    <router-link to=\"/comp/testsecond\" class=\"link\" active-class=\"link2\" exact>試験運用</router-link>\n     <router-link to=\"/todo\" class=\"link\" active-class=\"link2\" exact>todo</router-link>\n   </div>\n </template>\n \n"
                 }
             ],
             "date": 1629466595026,

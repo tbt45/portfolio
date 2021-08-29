@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/components/views/Reversi.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1630234053200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630234074249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,89 @@\n <template>\n+    <body>\n+    <header class=\"title\">REVERSI</header>\n+    <main class=\"main\">\n+        <table class=\"field\">\n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr>\n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr> \n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr> \n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr> <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr> \n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr> \n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr> \n+            <tr class=\"column\">\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+                <th class=\"squares\"></th>\n+            </tr>\n+        </table>\n+    </main>\n     \n+</body>\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234413278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,5 +85,9 @@\n         </table>\n     </main>\n     \n </body>\n-</template>\n\\ No newline at end of file\n+</template>\n+\n+<style lang=\"\" scoped>\n+    \n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234422538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,7 +87,20 @@\n     \n </body>\n </template>\n \n-<style lang=\"\" scoped>\n-    \n+<style>\n+    .title {\n+  font-size: 50px;\n+}\n+\n+.field {\n+  background-color: green;\n+}\n+\n+.squares {\n+  width: 60px;\n+  height: 60px;\n+  border: solid;\n+  border-color: black;\n+}\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234428109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n </template>\n \n <style>\n     .title {\n-  font-size: 50px;\n+        font-size: 50px;\n }\n \n .field {\n   background-color: green;\n"
+                },
+                {
+                    "date": 1630234433669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,10 +92,10 @@\n     .title {\n         font-size: 50px;\n }\n \n-.field {\n-  background-color: green;\n+    .field {\n+        background-color: green;\n }\n \n .squares {\n   width: 60px;\n"
+                },
+                {
+                    "date": 1630234440345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,13 +90,13 @@\n \n <style>\n     .title {\n         font-size: 50px;\n-}\n+    }\n \n     .field {\n         background-color: green;\n-}\n+    }\n \n .squares {\n   width: 60px;\n   height: 60px;\n"
+                },
+                {
+                    "date": 1630234446237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,10 +96,10 @@\n     .field {\n         background-color: green;\n     }\n \n-.squares {\n-  width: 60px;\n+    .squares {\n+        width: 60px;\n   height: 60px;\n   border: solid;\n   border-color: black;\n }\n"
+                },
+                {
+                    "date": 1630234452363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n     }\n \n     .squares {\n         width: 60px;\n-  height: 60px;\n-  border: solid;\n-  border-color: black;\n+        height: 60px;\n+        border: solid;\n+        border-color: black;\n }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234930349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n     <body>\n+        \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\">\n             <tr class=\"column\">\n@@ -101,6 +102,6 @@\n         width: 60px;\n         height: 60px;\n         border: solid;\n         border-color: black;\n-}\n+    }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234938172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n     <body>\n-        \n+    <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\">\n             <tr class=\"column\">\n"
+                },
+                {
+                    "date": 1630234943878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-    <body>\n+    <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\">\n@@ -85,9 +85,9 @@\n             </tr>\n         </table>\n     </main>\n     \n-</body>\n+</div>\n </template>\n \n <style>\n     .title {\n"
+                },
+                {
+                    "date": 1630234953881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,10 @@\n     \n </div>\n </template>\n \n+s\n+\n <style>\n     .title {\n         font-size: 50px;\n     }\n"
+                },
+                {
+                    "date": 1630234998563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,16 @@\n     \n </div>\n </template>\n \n-s\n+<script>\n+export default {\n+        Home() {\n+            this.$router.push(\"/\");\n+        },\n+    \n+}\n+</script>\n \n <style>\n     .title {\n         font-size: 50px;\n"
+                },
+                {
+                    "date": 1630235044096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,8 +90,9 @@\n </template>\n \n <script>\n export default {\n+    \n         Home() {\n             this.$router.push(\"/\");\n         },\n     \n"
+                },
+                {
+                    "date": 1630235050951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n </template>\n \n <script>\n export default {\n-    \n+    methods: ()\n         Home() {\n             this.$router.push(\"/\");\n         },\n     \n"
+                },
+                {
+                    "date": 1630235056033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n </template>\n \n <script>\n export default {\n-    methods: ()\n+    methods: (){\n         Home() {\n             this.$router.push(\"/\");\n         },\n     \n"
+                },
+                {
+                    "date": 1630235063840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,13 +90,13 @@\n </template>\n \n <script>\n export default {\n-    methods: (){\n+    methods: {\n         Home() {\n             this.$router.push(\"/\");\n         },\n-    \n+    }\n }\n </script>\n \n <style>\n"
+                }
+            ],
+            "date": 1630234053200,
+            "name": "Commit-0",
+            "content": "<template>\n    \n</template>"
+        }
+    ]
+}

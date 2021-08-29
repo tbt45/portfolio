@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <button @click="Home">ホーム</button>    
         <h1>Todo</h1>
     <div>
         <input type="text" v-model="title" placeholder="タイトル">
@@ -32,16 +33,19 @@
     }),
     methods: {
     // リストの追加
-    addList: function(){
-        if(this.title === '' || this.body === '') return
-        this.lists.push({title: this.title, body: this.body})
-        this.title = ''
-        this.body = ''
-    },
+        addList: function(){
+            if(this.title === '' || this.body === '') return
+            this.lists.push({title: this.title, body: this.body})
+            this.title = ''
+            this.body = ''
+        },
     // リストの削除
-    deleteList: function(i){
-        this.lists.splice(i,1)
-    }
+        deleteList: function(i){
+            this.lists.splice(i,1)
+        },
+        Home() {
+            this.$router.push("/");
+        },
     }
 }
 </script>

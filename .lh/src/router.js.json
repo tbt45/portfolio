@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 65,
+            "activePatchIndex": 84,
             "patches": [
                 {
                     "date": 1630229277132,
@@ -268,6 +268,82 @@
                 {
                     "date": 1630231099172,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n import Todo from './components/views/Todo';\n \n Vue.use(Router);\n \n-export defaulte new Router({\n+export default new Router({\n     routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo }]\n });\n"
+                },
+                {
+                    "date": 1630234152929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-\n+import Todo from './components/views/Todo';\n Vue.use(Router);\n \n export default new Router({\n     routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo }]\n"
+                },
+                {
+                    "date": 1630234158516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-import Todo from './components/views/Todo';\n+import  from './components/views/Todo';\n+\n Vue.use(Router);\n \n export default new Router({\n     routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo }]\n"
+                },
+                {
+                    "date": 1630234163988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-import  from './components/views/Todo';\n+import Rever from './components/views/Todo';\n \n Vue.use(Router);\n \n export default new Router({\n"
+                },
+                {
+                    "date": 1630234172376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-import Rever from './components/views/Todo';\n+import Reversi from './components/views/';\n \n Vue.use(Router);\n \n export default new Router({\n"
+                },
+                {
+                    "date": 1630234190625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-import Reversi from './components/views/';\n+import Reversi from './components/views/Reversi';\n \n Vue.use(Router);\n \n export default new Router({\n"
+                },
+                {
+                    "date": 1630234198403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/todo', component: Todo }]\n });\n"
+                },
+                {
+                    "date": 1630234206583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/todo', component: Todo }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/R', component: Todo }]\n });\n"
+                },
+                {
+                    "date": 1630234213468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/R', component: Todo }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: Todo }]\n });\n"
+                },
+                {
+                    "date": 1630234219211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: Todo }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: R }]\n });\n"
+                },
+                {
+                    "date": 1630234224877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: R }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: Reversi }]\n });\n"
+                },
+                {
+                    "date": 1630234267022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-import Reversi from './components/views/Reversi';\n+import Reverse from './components/views/Reversi';\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: Reversi }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: Reverse }]\n });\n"
+                },
+                {
+                    "date": 1630234278306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n import TestSecond from './components/views/TestSecond';\n import Todo from './components/views/Todo';\n-import Reverse from './components/views/Reversi';\n+import Reversi from './components/views/Reversi';\n \n Vue.use(Router);\n \n export default new Router({\n"
+                },
+                {
+                    "date": 1630234305740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/Reversi', component: Reverse }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reverse }]\n });\n"
+                },
+                {
+                    "date": 1630234322102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reverse }]\n+    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n });\n"
+                },
+                {
+                    "date": 1630234651096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import Vue from \"vue\";\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n-import TestSecond from './components/views/TestSecond';\n+import TestSecond from './components/views/';\n import Todo from './components/views/Todo';\n import Reversi from './components/views/Reversi';\n \n Vue.use(Router);\n"
+                },
+                {
+                    "date": 1630234659293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import Vue from \"vue\";\n import Router from \"vue-router\";\n import Test from './components/views/Test.vue';\n-import TestSecond from './components/views/';\n+import Home from './components/views/Home';\n import Todo from './components/views/Todo';\n import Reversi from './components/views/Reversi';\n \n Vue.use(Router);\n"
+                },
+                {
+                    "date": 1630234667078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Test }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n+    routes: [{ path: '/', component: Home }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n });\n"
+                },
+                {
+                    "date": 1630234674394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Home }, { path: '/TestSecond', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n+    routes: [{ path: '/', component: Home }, { path: '/test', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n });\n"
+                },
+                {
+                    "date": 1630234683900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n \n Vue.use(Router);\n \n export default new Router({\n-    routes: [{ path: '/', component: Home }, { path: '/test', component: TestSecond },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n+    routes: [{ path: '/', component: Home }, { path: '/test', component: Test },{ path: '/todo', component: Todo },{ path: '/reversi', component: Reversi }]\n });\n"
                 }
             ],
             "date": 1630229277132,

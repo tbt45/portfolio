@@ -1,0 +1,74 @@
+{
+    "sourceFile": "src/components/views/TestSecond.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1630233360726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630233369285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,15 @@\n     methods: {\n     increment(){\n     this.number += 1;\n     },\n-    \n+    Ts() {\n+      this.$router.push(\"testsecond\");\n+    },\n+    Todo() {\n+      this.$router.push(\"todo\");\n+    },\n+  }\n     }\n } \n </script>\n \n"
+                },
+                {
+                    "date": 1630233377434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,9 @@\n     Todo() {\n       this.$router.push(\"todo\");\n     },\n   }\n-    }\n-} \n+    } \n </script>\n \n <style>\n     .bg-color{\n"
+                },
+                {
+                    "date": 1630233382564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,10 @@\n     },\n     Todo() {\n       this.$router.push(\"todo\");\n     },\n-  }\n-    } \n+    }\n+} \n </script>\n \n <style>\n     .bg-color{\n"
+                },
+                {
+                    "date": 1630233389485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,11 +37,11 @@\n     },\n     Ts() {\n       this.$router.push(\"testsecond\");\n     },\n-    Todo() {\n-      this.$router.push(\"todo\");\n-    },\n+        Todo() {\n+            this.$router.push(\"todo\");\n+        },\n     }\n } \n </script>\n \n"
+                },
+                {
+                    "date": 1630233396091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,11 +34,11 @@\n     methods: {\n     increment(){\n     this.number += 1;\n     },\n-    Ts() {\n-      this.$router.push(\"testsecond\");\n-    },\n+        Ts() {\n+            this.$router.push(\"testsecond\");\n+        },\n         Todo() {\n             this.$router.push(\"todo\");\n         },\n     }\n"
+                },
+                {
+                    "date": 1630233407160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,11 +31,11 @@\n         number: 0,\n         }\n     },\n     methods: {\n-    increment(){\n-    this.number += 1;\n-    },\n+        increment(){\n+        this.number += 1;\n+        },\n         Ts() {\n             this.$router.push(\"testsecond\");\n         },\n         Todo() {\n"
+                },
+                {
+                    "date": 1630233414812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     methods: {\n         increment(){\n         this.number += 1;\n         },\n-        Ts() {\n+        () {\n             this.$router.push(\"testsecond\");\n         },\n         Todo() {\n             this.$router.push(\"todo\");\n"
+                },
+                {
+                    "date": 1630233420453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     methods: {\n         increment(){\n         this.number += 1;\n         },\n-        () {\n+        Test() {\n             this.$router.push(\"testsecond\");\n         },\n         Todo() {\n             this.$router.push(\"todo\");\n"
+                },
+                {
+                    "date": 1630233438421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n+                <button @click=\"Ts\">試験運用</button>\n+    <button @click=\"Todo\">TODO</button>    \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n             <input v-model=\"message\" placeholder=\"入力してください\">\n"
+                },
+                {
+                    "date": 1630233443729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n                 <button @click=\"Ts\">試験運用</button>\n-    <button @click=\"Todo\">TODO</button>    \n+            <button @click=\"Todo\">TODO</button>    \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n             <input v-model=\"message\" placeholder=\"入力してください\">\n"
+                },
+                {
+                    "date": 1630233451046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n-                <button @click=\"Ts\">試験運用</button>\n+            <button @click=\"\">試験運用</button>\n             <button @click=\"Todo\">TODO</button>    \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n"
+                },
+                {
+                    "date": 1630233456874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n-            <button @click=\"\">試験運用</button>\n+            <button @click=\"Test\"></button>\n             <button @click=\"Todo\">TODO</button>    \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n"
+                },
+                {
+                    "date": 1630233485451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div> \n         <div class=\"bg-color\">\n-            <button @click=\"Test\"></button>\n+            <button @click=\"Test\">ホーム</button>\n             <button @click=\"Todo\">TODO</button>    \n             <button @click=\"increment\">ボタン</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n@@ -37,9 +37,9 @@\n         increment(){\n         this.number += 1;\n         },\n         Test() {\n-            this.$router.push(\"testsecond\");\n+            this.$router.push(\"\");\n         },\n         Todo() {\n             this.$router.push(\"todo\");\n         },\n"
+                },
+                {
+                    "date": 1630233491709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         increment(){\n         this.number += 1;\n         },\n         Test() {\n-            this.$router.push(\"\");\n+            this.$router.push(\"・\");\n         },\n         Todo() {\n             this.$router.push(\"todo\");\n         },\n"
+                }
+            ],
+            "date": 1630233360726,
+            "name": "Commit-0",
+            "content": "<template>\n    <div> \n        <div class=\"bg-color\">\n            <button @click=\"increment\">ボタン</button>\n            <p>いいね({{ number }})</p>\n            <p>入力↓</p>\n            <input v-model=\"message\" placeholder=\"入力してください\">\n            <p>コメント: {{ message }}</p>\n            <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n            <label for=\"1\">1</label>\n            <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n            <label for=\"2\">2</label>\n            <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n            <label for=\"3\">3</label>\n            <br>\n            <span>チェック {{ check }}</span>\n        </div>\n        <p class=\"end\">テスト終わり</p>\n    </div>\n</template>\n\n<script>\n\n\nexport default {\n    el: '#app',\n    data: function() {\n        return {\n        message: [],\n        check: [],\n        number: 0,\n        }\n    },\n    methods: {\n    increment(){\n    this.number += 1;\n    },\n    \n    }\n} \n</script>\n\n<style>\n    .bg-color{\n        background-color: burlywood;\n    }\n    .end{\n        background-color: rgb(175, 175, 241);\n        margin-bottom: 100px;\n    }\n</style>"
+        }
+    ]
+}

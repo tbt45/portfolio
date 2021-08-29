@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/components/views/Home.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1630234705214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630234710801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     },\n     Todo() {\n       this.$router.push(\"todo\");\n     },\n-    Todo() {\n+    () {\n       this.$router.push(\"todo\");\n     },\n   }\n }\n"
+                },
+                {
+                    "date": 1630234716526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     },\n     Todo() {\n       this.$router.push(\"todo\");\n     },\n-    () {\n+    Reversi() {\n       this.$router.push(\"todo\");\n     },\n   }\n }\n"
+                },
+                {
+                    "date": 1630234725189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     Todo() {\n       this.$router.push(\"todo\");\n     },\n     Reversi() {\n-      this.$router.push(\"todo\");\n+      this.$router.push(\"reversi\");\n     },\n   }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234758247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div class=\"main\">\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n-    ホーム\n+    divホーム\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630234763347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div class=\"main\">\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n-    divホーム\n+    div.hoホーム\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630234769891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div class=\"main\">\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n-    div.hoホーム\n+    <div class=\"home\"></div>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630234775548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   <div class=\"main\">\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n-    <div class=\"home\"></div>\n+    <div class=\"home\">ホーム</div>\n   </div>\n </template>\n \n <script>\n@@ -21,5 +21,5 @@\n       this.$router.push(\"reversi\");\n     },\n   }\n }\n-</script>\n\\ No newline at end of file\n+</script>\n"
+                },
+                {
+                    "date": 1630234782522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,4 +22,8 @@\n     },\n   }\n }\n </script>\n+\n+<style>\n+\n+</style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234788371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n   </div>\n </template>\n \n <script>\n-\n export default {\n   methods: {\n     Test() {\n       this.$router.push(\"test\");\n@@ -24,6 +23,6 @@\n }\n </script>\n \n <style>\n-\n+  \n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234794795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,6 +23,8 @@\n }\n </script>\n \n <style>\n-  \n+  .home{\n+    \n+  }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234801100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    \n+    inline\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234807394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    inline\n+    i\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234812707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    i\n+    in\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234818044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    in\n+    inrin\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234825204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    inrin\n+    inlin\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234834637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    inlin\n+    di\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630234842478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n </script>\n \n <style>\n   .home{\n-    di\n+    display: block;\n   }\n </style>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1630234705214,
+            "name": "Commit-0",
+            "content": "<template>\n  <div class=\"main\">\n    <button @click=\"Test\">TEST</button>\n    <button @click=\"Todo\">TODO</button>    \n    <button @click=\"Reversi\">REVERSI</button>  \n    ホーム\n  </div>\n</template>\n\n<script>\n\nexport default {\n  methods: {\n    Test() {\n      this.$router.push(\"test\");\n    },\n    Todo() {\n      this.$router.push(\"todo\");\n    },\n    Todo() {\n      this.$router.push(\"todo\");\n    },\n  }\n}\n</script>"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 23,
+            "activePatchIndex": 32,
             "patches": [
                 {
                     "date": 1630229835527,
@@ -100,6 +100,42 @@
                 {
                     "date": 1630230543580,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n <script>\n     export default {\n         data: () => ({\n             lists: [\n-                {title: '', body: ''},\n-                {title: '', body: ''}\n+                // {title: '', body: ''},\n+                // {title: '', body: ''}\n     ],\n     title: '',\n     body: ''\n     }),\n"
+                },
+                {
+                    "date": 1630233522168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <template>\n+\n     <div id=\"app\">\n         <h1>Todo</h1>\n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n"
+                },
+                {
+                    "date": 1630233533558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n-\n     <div id=\"app\">\n         <h1>Todo</h1>\n+        \n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n"
+                },
+                {
+                    "date": 1630233539878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n     <div id=\"app\">\n         <h1>Todo</h1>\n-        \n+            <button @click=\"Ts\">試験運用</button>\n+            <button @click=\"Todo\">TODO</button>    \n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n"
+                },
+                {
+                    "date": 1630233552192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div id=\"app\">\n         <h1>Todo</h1>\n             <button @click=\"Ts\">試験運用</button>\n-            <button @click=\"Todo\">TODO</button>    \n+C    \n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n"
+                },
+                {
+                    "date": 1630233558470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n     <div id=\"app\">\n         <h1>Todo</h1>\n+            <button @click=\"Todo\">TODO</button>    \n             <button @click=\"Ts\">試験運用</button>\n-C    \n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n     <div>\n"
+                },
+                {
+                    "date": 1630233564208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div id=\"app\">\n         <h1>Todo</h1>\n-            <button @click=\"Todo\">TODO</button>    \n+            <button @click=\"Test\">TODO</button>    \n             <button @click=\"Ts\">試験運用</button>\n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n"
+                },
+                {
+                    "date": 1630233571528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n     <div id=\"app\">\n         <h1>Todo</h1>\n-            <button @click=\"Test\">TODO</button>    \n+            <button @click=\"Test\">ホーム</button>    \n             <button @click=\"Ts\">試験運用</button>\n     <div>\n         <input type=\"text\" v-model=\"title\" placeholder=\"タイトル\">\n     </div>\n"
+                },
+                {
+                    "date": 1630233592247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,6 +44,12 @@\n     deleteList: function(i){\n         this.lists.splice(i,1)\n     }\n     }\n+            Test() {\n+            this.$router.push(\"/\");\n+        },\n+        Todo() {\n+            this.$router.push(\"todo\");\n+        },\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630233600845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     deleteList: function(i){\n         this.lists.splice(i,1)\n     }\n     }\n-　　　　 Test() {\n+　　　 Test() {\n             this.$router.push(\"/\");\n         },\n         Todo() {\n             this.$router.push(\"todo\");\n"
                 }
             ],
             "date": 1630229835527,
