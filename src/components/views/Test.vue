@@ -95,6 +95,6 @@ export default {
     }
     .comment{
         color: crimson;
-        
+        border: solid red;
     }
 </style>
