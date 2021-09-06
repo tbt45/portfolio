@@ -1,0 +1,118 @@
+{
+    "sourceFile": "src/components/views/none.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 25,
+            "patches": [
+                {
+                    "date": 1630758418488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630758424526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,19 @@\n-te\n\\ No newline at end of file\n+<template>\n+            <!-- <div class=\"bg-color\">\n+            <button @click=\"increment\">+1</button>\n+            <button @click=\"decrement\">-1</button>\n+            <p>いいね({{ number }})</p>\n+            <p>入力↓</p>\n+            <input v-model=\"message\" placeholder=\"入力してください\">\n+            <p>コメント: {{ message }}</p>\n+            <input type=\"checkbox\" id=\"jack\" value=\"first\" v-model=\"check\">\n+            <label for=\"1\">1</label>\n+            <input type=\"checkbox\" id=\"john\" value=\"second\" v-model=\"check\">\n+            <label for=\"2\">2</label>\n+            <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n+            <label for=\"3\">3</label>\n+            <br>\n+            <span>チェック {{ check }}</span>\n+        </div>\n+        <!-- <p class=\"end\">テスト終わり</p> --> -->\n+</template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758434030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n         </div>\n-        <!-- <p class=\"end\">テスト終わり</p> --> -->\n+        <!-- <p class=\"end\">テスト終わり</p> -->\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758447358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <template>\n-            <!-- <div class=\"bg-color\">\n+            <div class=\"bg-color\">\n             <button @click=\"increment\">+1</button>\n             <button @click=\"decrement\">-1</button>\n             <p>いいね({{ number }})</p>\n             <p>入力↓</p>\n@@ -14,6 +14,6 @@\n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n         </div>\n-        <!-- <p class=\"end\">テスト終わり</p> -->\n+        <!-- <p class=\"end\">テスト終わり</p>\n </template>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758455171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n         </div>\n-        <!-- <p class=\"end\">テスト終わり</p>\n-</template>\n\\ No newline at end of file\n+  <!-- <!-- <p class=\"end\">テスト終わり</p>\n+</template>       -->\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758461287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n         </div>\n-  <!-- <!-- <p class=\"end\">テスト終わり</p>\n-</template>       -->\n\\ No newline at end of file\n+  <!-- <!-- <p class=\"end\">テスト終わり</p> -->\n+</template>      \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758468841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n         </div>\n-  <!-- <!-- <p class=\"end\">テスト終わり</p> -->\n+        <p class=\"end\">テスト終わり</p> -->\n </template>      \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758474484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n         </div>\n-        <p class=\"end\">テスト終わり</p> -->\n+        <p class=\"end\">テスト終わり</p>\n </template>      \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758479580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n             <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n+        <p class=\"end\">テスト終わり</p>\n         </div>\n-        <p class=\"end\">テスト終わり</p>\n </template>      \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758486144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,8 @@\n             <input type=\"checkbox\" id=\"mike\" value=\"third\" v-model=\"check\"> \n             <label for=\"3\">3</label>\n             <br>\n             <span>チェック {{ check }}</span>\n-        <p class=\"end\">テスト終わり</p>\n+            <p class=\"end\">テスト終わり</p>\n         </div>\n\\ No newline at end of file\n-</template>      \n+</template> \n+     \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758491655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,10 @@\n             <span>チェック {{ check }}</span>\n             <p class=\"end\">テスト終わり</p>\n         </div>\n </template> \n-     \n\\ No newline at end of file\n+\n+<script>\n+export default {\n+    \n+}\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758509552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,11 @@\n </template> \n \n <script>\n export default {\n-    \n+        data: function() {\n+        return {\n+            // message: [],\n+            // check: [],\n+            // number: 0,\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758517092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,11 @@\n </template> \n \n <script>\n export default {\n-        data: function() {\n-        return {\n-            // message: [],\n+    data: function() {\n+    return {\n+        // message: [],\n             // check: [],\n             // number: 0,\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758524578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n <script>\n export default {\n     data: function() {\n     return {\n-        // message: [],\n-            // check: [],\n-            // number: 0,\n+        message: [],\n+        check: [],\n+        number: 0,\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758533408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,6 @@\n     return {\n         message: [],\n         check: [],\n         number: 0,\n-}\n+},\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758544820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,6 @@\n     return {\n         message: [],\n         check: [],\n         number: 0,\n-},\n+    }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758553385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,6 @@\n     return {\n         message: [],\n         check: [],\n         number: 0,\n-    }\n+}\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758559722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,6 @@\n         message: [],\n         check: [],\n         number: 0,\n }\n+\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758569312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,7 @@\n         message: [],\n         check: [],\n         number: 0,\n }\n+}\n \n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758578409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,8 @@\n     return {\n         message: [],\n         check: [],\n         number: 0,\n+    }\n }\n }\n-\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758602588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,14 @@\n         message: [],\n         check: [],\n         number: 0,\n     }\n+        methods: {\n+        // increment(){\n+        //     this.number += 1;\n+        // },\n+        // decrement(){\n+        //     this.number -= 1;\n+        // },\n }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758610924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n         message: [],\n         check: [],\n         number: 0,\n     }\n-        methods: {\n-        // increment(){\n+    methods: {\n+        increment(){\n         //     this.number += 1;\n         // },\n         // decrement(){\n         //     this.number -= 1;\n"
+                },
+                {
+                    "date": 1630758617093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,12 +27,12 @@\n         number: 0,\n     }\n     methods: {\n         increment(){\n-        //     this.number += 1;\n-        // },\n-        // decrement(){\n-        //     this.number -= 1;\n-        // },\n+            this.number += 1;\n+        },\n+        decrement(){\n+            this.number -= 1;\n+        },\n }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758637984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,7 +32,8 @@\n         },\n         decrement(){\n             this.number -= 1;\n         },\n+        \n }\n }\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758653153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,7 @@\n         },\n         decrement(){\n             this.number -= 1;\n         },\n-        \n+    }\n }\n-}\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630758659378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n         message: [],\n         check: [],\n         number: 0,\n     }\n+    },\n     methods: {\n         increment(){\n             this.number += 1;\n         },\n"
+                }
+            ],
+            "date": 1630758418488,
+            "name": "Commit-0",
+            "content": "te"
+        }
+    ]
+}

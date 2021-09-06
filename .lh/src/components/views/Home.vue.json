@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 18,
+            "activePatchIndex": 48,
             "patches": [
                 {
                     "date": 1630234705214,
@@ -80,6 +80,126 @@
                 {
                     "date": 1630244774574,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n   <div class=\"main\">\n+    <div class=\"home\">ホーム</div>\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n-    <div class=\"home\">ホーム</div>\n   </div>\n </template>\n \n <script>\n@@ -25,6 +25,7 @@\n \n <style>\n   .home{\n     display: block;\n+\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741072848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,8 @@\n \n <style>\n   .home{\n     display: block;\n+    \n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741112913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n \n <style>\n   .home{\n     display: block;\n-    \n+    te\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741120818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n \n <style>\n   .home{\n     display: block;\n-    te\n+    text-\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741135176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n \n <style>\n   .home{\n     display: block;\n-    text-\n+    text-align: center;\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741147323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,7 +26,8 @@\n <style>\n   .home{\n     display: block;\n     text-align: center;\n+    margin-top: ;\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741152840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,8 @@\n <style>\n   .home{\n     display: block;\n     text-align: center;\n-    margin-top: ;\n+    margin-top: 4;\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741165049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n <style>\n   .home{\n     display: block;\n     text-align: center;\n-    margin-top: 4;\n+    margin-top: 40px;\n+    \n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741181738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <template>\n   <div class=\"main\">\n+    \n     <div class=\"home\">ホーム</div>\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n@@ -27,8 +28,8 @@\n   .home{\n     display: block;\n     text-align: center;\n     margin-top: 40px;\n-    \n \n+\n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741196545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    \n+    <title></title>\n     <div class=\"home\">ホーム</div>\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n"
+                },
+                {
+                    "date": 1630741306599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <div class=\"main\">\n-    <title></title>\n+    <title>tbt</title>\n     <div class=\"home\">ホーム</div>\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n"
+                },
+                {
+                    "date": 1630741322631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n-    <div class=\"home\">ホーム</div>\n+    <div class=\"home\"></div>\n     <button @click=\"Test\">TEST</button>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n"
+                },
+                {
+                    "date": 1630741352271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n-    <div class=\"home\"></div>\n-    <button @click=\"Test\">TEST</button>\n+    <div class=\"home\">tbt</div>\n+    < @click=\"Test\">TEST</>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1630741359028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n-    < @click=\"Test\">TEST</>\n+    <li @click=\"Test\">TEST</li>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1630741385158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n+    \n     <li @click=\"Test\">TEST</li>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n"
+                },
+                {
+                    "date": 1630741421175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n-    \n+    ul\n     <li @click=\"Test\">TEST</li>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n"
+                },
+                {
+                    "date": 1630741426609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n-    ul\n+    <ul class=\"menu\"></ul>\n     <li @click=\"Test\">TEST</li>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n"
+                },
+                {
+                    "date": 1630741432606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <template>\n   <div class=\"main\">\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n-    <ul class=\"menu\"></ul>\n+    <ul class=\"menu\">\n     <li @click=\"Test\">TEST</li>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n   </div>\n"
+                },
+                {
+                    "date": 1630741437832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     <ul class=\"menu\">\n     <li @click=\"Test\">TEST</li>\n     <button @click=\"Todo\">TODO</button>    \n     <button @click=\"Reversi\">REVERSI</button>  \n+    </ul>\n   </div>\n </template>\n \n <script>\n"
+                },
+                {
+                    "date": 1630741445481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,11 @@\n   <div class=\"main\">\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n     <ul class=\"menu\">\n-    <li @click=\"Test\">TEST</li>\n-    <button @click=\"Todo\">TODO</button>    \n-    <button @click=\"Reversi\">REVERSI</button>  \n+      <li @click=\"Test\">TEST</li>\n+      <button @click=\"Todo\">TODO</button>    \n+      <button @click=\"Reversi\">REVERSI</button>  \n     </ul>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630741455694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n     <ul class=\"menu\">\n       <li @click=\"Test\">TEST</li>\n-      <button @click=\"Todo\">TODO</button>    \n+      < @click=\"Todo\">TODO</>    \n       <button @click=\"Reversi\">REVERSI</button>  \n     </ul>\n   </div>\n </template>\n"
+                },
+                {
+                    "date": 1630741461494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n     <title>tbt</title>\n     <div class=\"home\">tbt</div>\n     <ul class=\"menu\">\n       <li @click=\"Test\">TEST</li>\n-      < @click=\"Todo\">TODO</>    \n-      <button @click=\"Reversi\">REVERSI</button>  \n+      <li @click=\"Todo\">TODO</li>    \n+      <li @click=\"Reversi\">REVERSI</li>  \n     </ul>\n   </div>\n </template>\n \n"
+                },
+                {
+                    "date": 1630741469394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,7 @@\n   .home{\n     display: block;\n     text-align: center;\n     margin-top: 40px;\n-\n-\n   }\n+  .me\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741475180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,9 @@\n   .home{\n     display: block;\n     text-align: center;\n     margin-top: 40px;\n+  },\n+  .menu{\n+\n   }\n-  .me\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741485129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,10 @@\n   .home{\n     display: block;\n     text-align: center;\n     margin-top: 40px;\n-  },\n+  }\n   .menu{\n+    \n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741490328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,8 @@\n     text-align: center;\n     margin-top: 40px;\n   }\n   .menu{\n-    \n+    di\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741569228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     text-align: center;\n     margin-top: 40px;\n   }\n   .menu{\n-    di\n+    display: inline;\n+    \n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741575892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,8 @@\n     margin-top: 40px;\n   }\n   .menu{\n     display: inline;\n-    \n+    cr\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741583377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,8 @@\n     margin-top: 40px;\n   }\n   .menu{\n     display: inline;\n-    cr\n+    cursor: -moz-grab;\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741688818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,8 @@\n     margin-top: 40px;\n   }\n   .menu{\n     display: inline;\n-    cursor: -moz-grab;\n+    cursor: po;\n \n   }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630741847471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,8 @@\n   }\n   .menu{\n     display: inline;\n     cursor: pointer;\n-    \n+    h\n \n   }\n </style>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1630234705214,

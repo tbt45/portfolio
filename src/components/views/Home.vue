@@ -1,9 +1,12 @@
 <template>
   <div class="main">
-    <div class="home">ホーム</div>
-    <button @click="Test">TEST</button>
-    <button @click="Todo">TODO</button>    
-    <button @click="Reversi">REVERSI</button>  
+    <title>tbt</title>
+    <div class="home">tbt</div>
+    <ul class="menu">
+      <li @click="Test">TEST</li>
+      <li @click="Todo">TODO</li>    
+      <li @click="Reversi">REVERSI</li>  
+    </ul>
   </div>
 </template>
 
@@ -26,6 +29,15 @@ export default {
 <style>
   .home{
     display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .menu{
+    display: inline;
+    cursor: pointer;
+  }
+  li:hover{
+    color: aqua;
 
   }
 </style>

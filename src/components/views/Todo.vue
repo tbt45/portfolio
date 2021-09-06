@@ -6,7 +6,6 @@
         <input type="text" v-model="title" placeholder="タイトル">
     </div>
     <div>
-
         <textarea v-model="body" placeholder="内容"></textarea>
     </div>
     <div>

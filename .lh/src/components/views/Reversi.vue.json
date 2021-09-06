@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 54,
             "patches": [
                 {
                     "date": 1630234053200,
@@ -76,6 +76,154 @@
                 {
                     "date": 1630235063840,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,13 +90,13 @@\n </template>\n \n <script>\n export default {\n-    methods: (){\n+    methods: {\n         Home() {\n             this.$router.push(\"/\");\n         },\n-    \n+    }\n }\n </script>\n \n <style>\n"
+                },
+                {
+                    "date": 1630760978418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n-        <table class=\"field\">\n+        <table vclass=\"field\">\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630760983765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n-        <table vclass=\"field\">\n+        <table class=\"field\" >\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630760989497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n-        <table class=\"field\" >\n+        <table class=\"field\" @>\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630760998022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n-        <table class=\"field\" @>\n+        <table class=\"field\" @click=\"bla\">\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630761041399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n-        <table class=\"field\" @click=\"bla\">\n+        <table class=\"field\" @click=\"\">\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630761108307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <div>\n     <button @click=\"Home\">ホーム</button> \n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n-        <table class=\"field\" @click=\"\">\n+        <table class=\"field\" @click=\"put\">\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n@@ -94,8 +94,9 @@\n     methods: {\n         Home() {\n             this.$router.push(\"/\");\n         },\n+        \n     }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1630761115304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n     methods: {\n         Home() {\n             this.$router.push(\"/\");\n         },\n-        \n+        put()\n     }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1630761124633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,11 @@\n     methods: {\n         Home() {\n             this.$router.push(\"/\");\n         },\n-        put()\n+        put(){\n+            console.log\n+        }\n     }\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1630761131087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            console.log\n+            console.log(put);\n         }\n     }\n }\n </script>\n"
+                },
+                {
+                    "date": 1630761139659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            console.log(put);\n+            console.log();\n         }\n     }\n }\n </script>\n"
+                },
+                {
+                    "date": 1630761180522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            console.log();\n+            co\n         }\n     }\n }\n </script>\n"
+                },
+                {
+                    "date": 1630761186935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            co\n+            e\n         }\n     }\n }\n </script>\n"
+                },
+                {
+                    "date": 1630761280353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            e\n+            alert\n         }\n     }\n }\n </script>\n"
+                },
+                {
+                    "date": 1630761287843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            alert\n+            alert(\"oooo\")\n         }\n     }\n }\n </script>\n"
+                },
+                {
+                    "date": 1630761346003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n-            alert(\"oooo\")\n+            alert(\"oooo\");\n         }\n     }\n }\n </script>\n@@ -116,5 +116,6 @@\n         height: 60px;\n         border: solid;\n         border-color: black;\n     }\n+    co\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761356591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,6 +116,6 @@\n         height: 60px;\n         border: solid;\n         border-color: black;\n     }\n-    co\n+    column\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761361768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,6 +116,8 @@\n         height: 60px;\n         border: solid;\n         border-color: black;\n     }\n-    column\n+    .title{\n+\n+    }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761367427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,8 @@\n         height: 60px;\n         border: solid;\n         border-color: black;\n     }\n-    .title{\n+    .column{\n \n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761372670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,7 +117,8 @@\n         border: solid;\n         border-color: black;\n     }\n     .column{\n+        wi\n \n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761378744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,8 @@\n         border: solid;\n         border-color: black;\n     }\n     .column{\n-        wi\n+        width: 60px;\n \n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761386954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,7 +118,8 @@\n         border-color: black;\n     }\n     .column{\n         width: 60px;\n+        height: 60px;\n \n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761405173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,14 +112,13 @@\n     }\n \n     .squares {\n         width: 60px;\n-        height: 60px;\n+        /* height: 60px; */\n         border: solid;\n         border-color: black;\n     }\n     .column{\n         width: 60px;\n         height: 60px;\n-\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761432142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,13 +112,13 @@\n     }\n \n     .squares {\n         width: 60px;\n-        /* height: 60px; */\n+        height: 60px;\n         border: solid;\n         border-color: black;\n     }\n     .column{\n         width: 60px;\n-        height: 60px;\n+        /* height: 60px; */\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761439149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,8 @@\n         border: solid;\n         border-color: black;\n     }\n     .column{\n-        width: 60px;\n-        /* height: 60px; */\n+        /* width: 60px; */\n+        height: 60px;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761444294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,8 @@\n         border: solid;\n         border-color: black;\n     }\n     .column{\n-        /* width: 60px; */\n-        height: 60px;\n+        width: 60px;\n+        /* height: 60px; */\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761450417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,7 +118,7 @@\n         border-color: black;\n     }\n     .column{\n         width: 60px;\n-        /* height: 60px; */\n+        height: 60px;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761514268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,9 +112,9 @@\n     }\n \n     .squares {\n         width: 60px;\n-        height: 60px;\n+        /* height: 60px; */\n         border: solid;\n         border-color: black;\n     }\n     .column{\n"
+                },
+                {
+                    "date": 1630761533317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,8 @@\n         border: solid;\n         border-color: black;\n     }\n     .column{\n-        width: 60px;\n+        /* width: 60px; */\n         height: 60px;\n     }\n </style>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1630761654509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,16 +4,16 @@\n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\" @click=\"put\">\n             <tr class=\"column\">\n+                <th class=\"squares\">{{</th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n-                <th class=\"squares\"></th>\n             </tr>\n             <tr class=\"column\">\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630761659602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\" @click=\"put\">\n             <tr class=\"column\">\n-                <th class=\"squares\">{{</th>\n+                <th class=\"squares\">{{put1</th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630761690750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\" @click=\"put\">\n             <tr class=\"column\">\n-                <th class=\"squares\">{{put1</th>\n+                <th class=\"squares\">{{put1}},</th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630761695916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\" @click=\"put\">\n             <tr class=\"column\">\n-                <th class=\"squares\">{{put1}},</th>\n+                <th class=\"squares\">{{put1}},{{put</th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n"
+                },
+                {
+                    "date": 1630761711575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <header class=\"title\">REVERSI</header>\n     <main class=\"main\">\n         <table class=\"field\" @click=\"put\">\n             <tr class=\"column\">\n-                <th class=\"squares\">{{put1}},{{put</th>\n+                <th class=\"squares\">{{put1}},{{put2}}</th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n                 <th class=\"squares\"></th>\n@@ -91,8 +91,9 @@\n \n <script>\n export default {\n     methods: {\n+        \n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n"
+                },
+                {
+                    "date": 1630761719219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,13 @@\n \n <script>\n export default {\n     methods: {\n-        \n+        data() {\n+            return {\n+                : 'value',\n+            };\n+        },\n         Home() {\n             this.$router.push(\"/\");\n         },\n         put(){\n"
+                },
+                {
+                    "date": 1630761729551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,11 +92,9 @@\n <script>\n export default {\n     methods: {\n         data() {\n-            return {\n-                : 'value',\n-            };\n+            \n         },\n         Home() {\n             this.$router.push(\"/\");\n         },\n"
+                },
+                {
+                    "date": 1630761740791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,9 +92,13 @@\n <script>\n export default {\n     methods: {\n         data() {\n-            da\n+            data() {\n+                return {\n+                    property: 'value',\n+                };\n+            },\n         },\n         Home() {\n             this.$router.push(\"/\");\n         },\n"
+                },
+                {
+                    "date": 1630762581704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,9 +90,9 @@\n </template>\n \n <script>\n export default {\n-    put1 \n+    put1 =\n     data() {\n         return {\n             date: 'value',\n             put1: ''\n"
                 }
             ],
             "date": 1630234053200,
